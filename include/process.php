@@ -33,7 +33,11 @@ if (isset($_POST["getempid"])) {
 	$obj = new DBOperation();
 	$rows = $obj->getAllRecord("emp_reg");
 	foreach ($rows as $row) {
-		echo "<option value='".$row["emp_id"]."'>".$row["emp_id"]."</option>";
+		if ($row["dep_id"] == $_SESSION["dep_id_c"]) {
+			echo "<option value='".$row["emp_id"]."'>".$row["emp_id"]."</option>";
+		}
+
+
 	}
 	exit();
 }
@@ -47,7 +51,7 @@ if (isset($_POST["department_name"])) {
 //Add Complaint
 if (isset($_POST["cus_name"])) {
 	$user = new DBOperation();
-	$result = $user->add_complaint($_POST['cus_name'],$_POST['cus_address'],$_POST['cus_phone'],$_POST['select_dep'],$_POST['select_employee']);
+	$result = $user->add_complaint($_POST['cus_name'],$_POST['cus_address'],$_POST['cus_phone'],$_POST['dep_comp'],$_POST['select_employee']);
 	echo $result;
 }
 //ADD Services
@@ -60,7 +64,15 @@ if (isset($_POST["service_name"]) AND isset($_POST["service_price"])){
 if (isset($_POST["comp_id"])){
 	$user = new DBOperation();
 	$result = $user->complaintnumber($_POST['comp_id']);
-	echo $result;
+	if ($result == $_SESSION["emp_id"]) {
+		echo $result;
+	}
+	elseif ($result == "COMPLAINT_NOT_REGISTERD") {
+		echo $result;
+	}
+	else{
+		echo "Not For You";
+	}
 }
 
 //Choose department 
@@ -76,7 +88,19 @@ if (isset($_POST["select_department_emp"])){
 	echo $dept_id;
 }
 
+//Choose department comp
+if (isset($_POST["select_department_comp"])){
+	$dep_id_c = $_POST["select_department_comp"];
+	$_SESSION["dep_id_c"] = $dep_id_c;
+	echo $dep_id_c;
+}
 
+// Chhose invoice
+if (isset($_POST["invoice_no_ad"])){
+	$invoice_no = $_POST["invoice_no_ad"];
+	$_SESSION["invoice_no_ad"] = $invoice_no;
+	echo $invoice_no;
+}
 
 //.........................Services.....................//
 
@@ -188,7 +212,7 @@ if (isset($_POST["getNewOrderItem"])) {
 		            <option value="">Choose Service</option>
 		            <?php 
 		            	foreach ($rows as $row) {
-							if ($row["dep_id"] == $_SESSION["dep_id"]) {
+							if ($row["dep_id"] == $_SESSION["dep_id1"]) {
 								?><option value="<?php echo $row['ser_id']; ?>"><?php echo $row["ser_name"]; ?></option><?php
 							}	
 		            	}
@@ -250,6 +274,7 @@ if (isset($_POST["getproduct"])) {
 //..............................Invoice Form..............//
 
 if ((isset($_POST["c_id"]))) {
+	$invoice_date = $_POST["invoice_date"];
 	$comp_id = $_POST["c_id"];
 	//arrayt
 	$ar_p_comp = $_POST["p_comp"];
@@ -270,10 +295,104 @@ if ((isset($_POST["c_id"]))) {
 	$due = $_POST["due"];
 	$grand_total = $_POST["grand_total"];
 	$payment_type = $_POST["payment_type"];
+	
 
 	$m = new Manage();
 	echo $result = $m->storeInvoiceData($comp_id,$ar_p_comp,$ar_p_name,$ar_retailer,$ar_p_price,$ar_qty,$ar_other_ser_name,$ar_other_ser_price,$ar_price,
 	$ar_ser_name,$sub_total,$new_total,$vis_charge,$discount,$paid,$due,$grand_total,$payment_type);
 
+}
+
+
+if (isset($_POST["manageServiceEmp"])) {
+	$m = new Manage();
+	$result = $m->manageRecordWithPagination("services");
+	$rows = $result["rows"];
+	if (count($rows) > 0) {
+		$n = 1;
+		foreach ($rows as $row) {
+			if ($row["dep_id"]==$_SESSION["dep_id1"]) {
+			?>
+				<tr>
+			        <td><?php echo $n; ?></td>
+			        <td><?php echo $row["ser_name"]; ?></td>
+			        <td><?php echo $row["dep_name"]; ?></td>
+			        <td><?php echo $row["price"]; ?></td>
+			      </tr>
+			<?php
+			$n++;
+			}
+		}
+		?>
+		<?php
+		exit();
+	}
+}
+
+if (isset($_POST["manageInvoiceAdmin"])) {
+	$m = new Manage();
+	$result = $m->manageRecordWithPagination("invoice_record_admin");
+	$rows = $result["rows"];
+	if (count($rows) > 0) {
+		$n = 1;
+		foreach ($rows as $row) {
+			if($_SESSION["invoice_no_ad"] != "" ){
+				if ($row["invoice_no"] == $_SESSION["invoice_no_ad"]) {
+					?>
+					<tr>
+						<td><?php echo $n; ?></td>
+						<td><?php echo $row["invoice_no"]; ?></td>
+						<td><?php echo $row["comp_id"]; ?></td>
+						<td><?php echo $row["invoice_date"]; ?></td>
+						<td><?php echo $row["sub_total"]; ?></td>
+						<td><?php echo $row["grand_total"]; ?></td>
+						<td><?php echo $row["discount"]; ?></td>
+						<td><?php echo $row["ser_name"]; ?></td>
+						<td><?php echo $row["ser_price"]; ?></td>
+						<td><?php echo $row["oth_ser_name"]; ?></td>
+						<td><?php echo $row["oth_ser_price"]; ?></td>
+						<td><?php echo $row["p_name"]; ?></td>
+						<td><?php echo $row["p_comp"]; ?></td>
+						<td><?php echo $row["retailer"]; ?></td>
+						<td><?php echo $row["qty"]; ?></td>
+						<td><?php echo $row["p_price"]; ?></td>
+						<td><?php echo $row["customer_name"]; ?></td>
+						<td><?php echo $row["employee_id"]; ?></td>
+					</tr>
+					<?php
+					$n++;
+				}
+			}
+			else {
+				?>
+				<tr>
+					<td><?php echo $n; ?></td>
+					<td><?php echo $row["invoice_no"]; ?></td>
+					<td><?php echo $row["comp_id"]; ?></td>
+					<td><?php echo $row["invoice_date"]; ?></td>
+					<td><?php echo $row["sub_total"]; ?></td>
+					<td><?php echo $row["grand_total"]; ?></td>
+					<td><?php echo $row["discount"]; ?></td>
+					<td><?php echo $row["ser_name"]; ?></td>
+					<td><?php echo $row["ser_price"]; ?></td>
+					<td><?php echo $row["oth_ser_name"]; ?></td>
+					<td><?php echo $row["oth_ser_price"]; ?></td>
+					<td><?php echo $row["p_name"]; ?></td>
+					<td><?php echo $row["p_comp"]; ?></td>
+					<td><?php echo $row["retailer"]; ?></td>
+					<td><?php echo $row["qty"]; ?></td>
+					<td><?php echo $row["p_price"]; ?></td>
+					<td><?php echo $row["customer_name"]; ?></td>
+					<td><?php echo $row["employee_id"]; ?></td>
+				</tr>
+				<?php
+				$n++;
+			}
+		}
+
+		?>
+		<?php
+		exit();
+	}
 }
 ?>

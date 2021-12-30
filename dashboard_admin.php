@@ -47,7 +47,8 @@ include_once("./database/constants.php");
                                 <div class="card-body">
                                     <h5 class="card-title">Complaints and departments</h5>
                                     <p class="card-text">Here you can register new complaints</p>
-                                    <a href="complaint.php" class="btn btn-primary">Add New complaints</a>
+                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#form_choose_department_comp">Add new complaints</a>
+                                    <a href="#" class="btn btn-primary">View</a>
                              </div>
                             </div>
                         </div>
@@ -97,7 +98,7 @@ include_once("./database/constants.php");
                         <div class="card-body">
                             <h5 class="card-title">Invoice Record</h5>
                             <p class="card-text">Here you can see the record of invoices</p>
-                            <a href="#" class="btn btn-primary">View</a>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#form_invoice_record_ad">View record</a>
                         </div>
                     </div>
                 </div>
@@ -111,5 +112,7 @@ include_once("./database/constants.php");
         <?php include_once("./templates/departments.php");?>
         <?php include_once("./templates/choose_department_ser.php");?>
         <?php include_once("./templates/choose_department_emp.php");?>
+        <?php include_once("./templates/choose_department_comp.php");?>
+        <?php include_once("./templates/invoice_record_ad.php");?>
     </body>
 </html>

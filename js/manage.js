@@ -28,6 +28,30 @@ $(document).ready(function(){
 			}
 		})
 	}
+	manageServiceEmp(1);
+	function manageServiceEmp(sn){
+		$.ajax({
+			url : DOMAIN+"/include/process.php",
+			method : "POST",
+			data : {manageServiceEmp:1},
+			success : function(data){
+				$("#get_service_emp").html(data);		
+			}
+		})
+	}
+	manageInvoiceAdmin(1);
+	function manageInvoiceAdmin(sn){
+		$.ajax({
+			url : DOMAIN+"/include/process.php",
+			method : "POST",
+			data : {manageInvoiceAdmin:1},
+			success : function(data){
+				$("#get_invoice_record_admin").html(data);		
+			}
+		})
+	}
+
+
 
 
 

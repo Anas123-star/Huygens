@@ -22,6 +22,15 @@ class Manage
 		elseif ($table == "emp_reg") {
 			$sql = "SELECT e.emp_id,e.name,d.dep_name,e.address,e.phone,d.dep_id FROM emp_reg e,departments d WHERE e.dep_id = d.dep_id";
 		}
+		elseif ($table == "invoice_record_admin"){
+			$sql = "SELECT s.invoice_no,s.comp_id,s.invoice_date,s.sub_total,s.grand_total,s.discount,d.ser_name,d.ser_price,d.oth_ser_name,
+					d.oth_ser_price,d.p_name,d.p_comp,d.retailer,d.qty,d.p_price,c.customer_name,c.employee_id FROM invoice s,invoice_details d,
+					comp_reg c WHERE s.invoice_no = d.invoice_no AND d.comp_id = c.comp_id";
+		}
+		elseif($table == "comp_record"){
+			$sql = "SELECT c.comp_id,c.customer_name,c.customer_address,c.customer_phone_no,d.dep_name,c.employee_id,e.name,e.phone,e.address 
+			FROM departments d,emp_reg e,comp_reg c WHERE c.dep_id = d.dep_id AND c.employee_id = e.emp_id";
+		}
 		$result = $this->con->query($sql) or die($this->con->error);
 		$rows = array();
 		if($result->num_rows > 0){
@@ -94,7 +103,7 @@ class Manage
 	// .........................Invoice Form Submission..........................//
 	public function storeInvoiceData($comp_id,$ar_p_comp,$ar_p_name,$ar_retailer,$ar_p_price,$ar_qty,$ar_other_ser_name,$ar_other_ser_price,$ar_price,
 	$ar_ser_name,$sub_total,$new_total,$vis_charge,$discount,$paid,$due,$grand_total,$payment_type){
-
+		
 		$pre_stmt = $this->con->prepare("INSERT INTO 
 			`invoice`(`comp_id`, `sub_total`, `new_total`, `vis_charge`, `discount`, 
 			`grand_total`, `paid_amt`, `due`, `payment_method`) VALUES (?,?,?,?,?,?,?,?,?)");
@@ -103,7 +112,7 @@ class Manage
 		$invoice_no = $pre_stmt->insert_id;
 
 		if ($invoice_no != null) {
-			for ($i=0; $i < count($ar_price) ; $i++) {
+			for ($i=0; $i < max(count($ar_price),count($ar_p_price),count($ar_other_ser_price)); $i++) {
 				
 				$insert_product = $this->con->prepare("INSERT INTO `invoice_details`(`invoice_no`, `comp_id`, `ser_name`, 
 				`ser_price`, `oth_ser_name`, `oth_ser_price`, `p_name`, `p_comp`, `retailer`, `p_price`, `qty`)
@@ -112,28 +121,21 @@ class Manage
 				$ar_retailer[$i],$ar_p_price[$i],$ar_qty[$i]);
 				$insert_product->execute() or die($this->con->error);
 			}
-			return "Invoice Completed";
+			return $invoice_no;
 		}
-		else {
-			return "Some Error";
-		}
-
-
-
 	}
-
-
-	
-
-
-
 	
 }
 
-//$obj = new Manage();
+/*
+SELECT c.comp_id,c.customer_name,c.customer_address,c.customer_phone_no,d.dep_name,c.employee_id,e.name,e.phone,e.emp_address 
+FROM departments d,emp_reg e,comp_reg c WHERE c.dep_id = d.dep_id AND c.employee_id = c.emp_id;
+
+$obj = new Manage();
+
 //echo($obj->update_record("invoice_details",["comp_id"=>22],["p_name"=>"hgf"]));
-//echo "<pre>";
-//print_r($obj->manageRecordWithPagination("emp_reg"))
+echo "<pre>";
+print_r($obj->manageRecordWithPagination("comp_record"));
 //$rows = $res["rows"];
 //foreach ($rows as $row) {
 //	echo $row["dep_name"];
@@ -141,7 +143,7 @@ class Manage
 //echo $obj->deleteRecord("categories","cid",14);
 //$res = $obj->getSingleRecord("other_ser","oth_id",1);
 //echo json_encode($res);
-
+*/
 //echo $obj->update_record("services",["ser_id"=>16],["dep_id"=>3,"ser_name"=>"Electro","price"=>1600]);
 
 

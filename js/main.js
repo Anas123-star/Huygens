@@ -278,8 +278,8 @@ $(document).ready(function(){
 				$("#select_dep").html(data);
 				$("#select_department").html(data);
 				$("#select_department_emp").html(data);
+				$("#select_department_comp").html(data);
 
-				
 			}
 		})
 	}
@@ -336,8 +336,15 @@ $(document).ready(function(){
 				method : "POST",
 				data  : $("#complaintnumber_form").serialize(),
 				success : function(data){
-					alert(data);
-					window.location.href = DOMAIN+"/templates/comp_ver.php";
+					if ($.trim(data) == "COMPLAINT_NOT_REGISTERD") {
+						alert("There is no complaint of this complaint_id");
+					}
+					else if(data == "Not For You"){
+						alert("This complaint is not for you");
+					}
+					else{
+						window.location.href = DOMAIN+"/new_invoice.php";
+					}
 				}
 			})
 		}
@@ -427,7 +434,29 @@ $(document).ready(function(){
 				window.location.href = DOMAIN+"/manage_employees.php";
 			}
 		})
-})
+	})
 
+	// Choose dept for complaints
+	$("#choose_department_comp_form").on("submit",function(){
+		$.ajax({
+			url : DOMAIN+"/include/process.php",
+			method : "POST",
+			data  : $("#choose_department_comp_form").serialize(),
+			success : function(data){
+				window.location.href = DOMAIN+"complaint.php";
+			}
+		})
+	})
+
+	$("#invoice_record_ad_form").on("submit",function(){
+		$.ajax({
+			url : DOMAIN+"/include/process.php",
+			method : "POST",
+			data  : $("#invoice_record_ad_form").serialize(),
+			success : function(data){
+				window.location.href = DOMAIN+"/manage_invoice_admin.php";
+			}
+		})
+	})
 
 })

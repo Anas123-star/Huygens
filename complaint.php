@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include_once("./database/constants.php");
+?>
 <html>
     <head>
         <meta charset="utf-8">
@@ -45,13 +48,9 @@
                         </select>
                         <small id="emp_id_error" class="form-text text-muted"></small>
                     </div>
-                    
                     <div class="form-group">
                         <label>Department</label>
-                        <select class="form-control" id="select_dep" name="select_dep">
-                        
-                        </select>
-                        <small id="dep_error" class="form-text text-muted"></small>
+                        <input type="text" class="form-control" name="dep_comp" id="dep_comp" value = '<?php echo $_SESSION["dep_id_c"]; ?>' readonly >
                     </div>
                     <p></p>
                     

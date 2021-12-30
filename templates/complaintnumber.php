@@ -16,7 +16,7 @@
         <form id="complaintnumber_form" onsubmit="return false">
           <div class="form-group">
             <label>Complaint Number</label>
-            <input type="text" class="form-control" name="comp_id" id="comp_id" placeholder="Enter the complaint number">
+            <input type="number" class="form-control" name="comp_id" id="comp_id" placeholder="Enter the complaint number">
             <small id="cn_error" class="form-text text-muted"></small>
           </div>
 

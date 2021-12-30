@@ -73,7 +73,7 @@ public function userLogin($emp_id,$password1)
 			$_SESSION["email"] = $row["email"];
 			$_SESSION["usertype"] = $row["usertype"];
 			$_SESSION["emp_id"] = $row["emp_id"];
-			$_SESSION["dep_id"] = $row["dep_id"];
+			$_SESSION["dep_id1"] = $row["dep_id"];
 
 			if ($result) {
 				return $_SESSION["usertype"];

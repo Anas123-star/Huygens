@@ -42,7 +42,7 @@ include_once("./database/constants.php");
                                 <div class = "form-group row">
                                     <label class = "col-sm-3" align = "right">Comp_id</label>
                                     <div class = "col-sm-6">
-                                        <input type="number" id = "c_id" name = "c_id" class = "form-control form-control-sm c_id" placeholder = "Enter the same complaint id that you have" required/>
+                                        <input type="number" id = "c_id" name = "c_id" class = "form-control form-control-sm c_id" value= <?php echo $_SESSION["cm_id"];?> readonly required/>
                                     </div>
                                 </div>
                                 <p></p>
@@ -203,7 +203,6 @@ include_once("./database/constants.php");
                                     <label class = "col-sm-3" align = "right">Payment Method</label>
                                     <div class = "col-sm-6">
                                         <select name="payment_type" id = "payment_type" class="form-control form-control-sm payment_type" required/>
-                                            <option value = "">Choose payment type </option>
                                             <option>Cash</option>
                                             <option>Online Payment</option>
                                         </select>

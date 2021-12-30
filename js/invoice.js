@@ -6,6 +6,7 @@ $(document).ready(function(){
 	$("#add").click(function(){
 		addNewRow();
 	})
+	
 // Add new row for SERVICE
 	function addNewRow(){
 		$.ajax({
@@ -21,10 +22,20 @@ $(document).ready(function(){
 			}
 		})
 	}
-	
+
 	$('#remove').click(function(){
-		$("#service_item").children("tr:last").remove();
-		calculate(0,0);
+		var x = 0;
+		$(".number").each(function(){
+			$(this).html(++x);
+		})
+		if(x!=1){
+			
+			$("#service_item").children("tr:last").remove();
+			calculate(0,0);
+		}
+		else{
+			alert("This last row cannot be deleted");
+		}
 	})
 
 	$("#service_item").delegate(".ser_id","change",function(){
@@ -37,10 +48,15 @@ $(document).ready(function(){
 			dataType : "json",
 			data : {getPrice:1,id:ser_id},
 			success: function(data){
-				tr.find(".price").val(data["price"]);
-				tr.find(".ser_name").val(data["ser_name"]);
-				tr.find(".ser_amt").html(tr.find(".price").val());
-				calculate(0,0);
+				if (ser_id == null) {
+					tr.find(".price").val();
+				}
+				else{
+					tr.find(".price").val(data["price"]);
+					tr.find(".ser_name").val(data["ser_name"]);
+					tr.find(".ser_amt").html(tr.find(".price").val());
+					calculate(0,0);
+				}
 			}
 		})
 
@@ -80,8 +96,17 @@ $(document).ready(function(){
 		}
 	})
 	$('#remove_other').click(function(){
-		$("#other_item").children("tr:last").remove();
-		calculate(0,0);
+		var y = 0;
+			$(".number1").each(function(){
+				$(this).html(++y);
+			})
+		if(y!=1){
+			$("#other_item").children("tr:last").remove();
+			calculate(0,0);
+		}
+		else{
+			alert("Now it cannot be deleted");
+		}
 	})
 
 
@@ -107,8 +132,17 @@ $(document).ready(function(){
 		})
 	}
 	$('#remove_product').click(function(){
-		$("#product_item").children("tr:last").remove();
-		calculate(0,0);
+		var z = 0;
+		$(".number2").each(function(){
+			$(this).html(++z);
+		})
+		if(z!=1){
+			$("#product_item").children("tr:last").remove();
+			calculate(0,0);
+		}
+		else{
+			alert("it cannot be deleted");
+		}
 	})
 
 	$("#product_item").delegate(".p_price","keyup",function(){
@@ -175,13 +209,32 @@ $(document).ready(function(){
 
 	//........................Invoice Form .........................//
 	$("#invoice_form").click(function(){
-		$.ajax({
-			url : DOMAIN+"/include/process.php",
-			method : "POST",
-			data  : $("#get_invoice_data").serialize(),
-			success : function(data){
-				alert(data);
-			}
-		})
+		var invoice = $("#get_invoice_data").serialize();
+
+		if ($("#c_id").val() === "") {
+			alert("please enter the complaint id:");
+		}
+		else if($("#paid").val() === ""){
+			alert("please enter the paid amount:");
+		}
+		else{
+			$.ajax({
+				url : DOMAIN+"/include/process.php",
+				method : "POST",
+				data  : $("#get_invoice_data").serialize(),
+				success : function(data){
+					if (data < 0) {
+						alert(data);
+					}else{
+						$("#get_invoice_data").trigger("reset");
+
+						if (confirm("Do u want to print invoice ?")) {
+							alert("ok");
+							window.location.href = DOMAIN+"/include/invoice_bill.php?invoice_no="+data+"&"+invoice;;
+						}
+					}	
+				}
+			})
+		}
 	})
 })

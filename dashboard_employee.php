@@ -59,7 +59,7 @@ include_once("./database/constants.php");
                                 <div class="card-body">
                                     <h5 class="card-title">Services</h5>
                                     <p class="card-text">Services related to your department</p>
-                                    <a href="#" class="btn btn-primary">View</a>
+                                    <a href="manage_service_emp.php" class="btn btn-primary">View</a>
                                 </div>
                             </div>
                         </div>

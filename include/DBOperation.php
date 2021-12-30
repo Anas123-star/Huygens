@@ -88,7 +88,7 @@ class DBOperation
 
 	public function complaintnumber($comp_id)
 	{
-		$pre_stmt = $this->con->prepare("SELECT comp_id,customer_name,customer_phone_no,customer_address,employee_id,dep_id FROM comp_reg WHERE comp_id = ?");
+		$pre_stmt = $this->con->prepare("SELECT comp_id,customer_name,customer_address,employee_id,dep_id FROM comp_reg WHERE comp_id = ?");
 		$pre_stmt->bind_param("s",$comp_id);
 		$pre_stmt->execute() or die($this->con->error);
 		$result = $pre_stmt->get_result();
@@ -100,7 +100,6 @@ class DBOperation
 		{
 			$row = $result->fetch_assoc();
 				$_SESSION["customer_name"] = $row["customer_name"];
-				$_SESSION["customer_phone_no"] = $row["customer_phone_no"];
 				$_SESSION["customer_address"] = $row["customer_address"];
 				$_SESSION["employee_id"] = $row["employee_id"];
 				$_SESSION["dep_id"] = $row["dep_id"];
@@ -118,4 +117,5 @@ class DBOperation
 
 }
 
+//echo ($_SESSION["cm_id"]);
 ?>

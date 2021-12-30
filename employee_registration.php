@@ -124,7 +124,7 @@
                     </div>
                     <div class="form-group">
 			            <label>upload Adhaarcard</label>
-			            <input type="file" name="adhaar" class="form-control" multiple />
+			            <input type="file" id = "myimg" name="myimg" class="form-control" multiple />
 		            </div>
                     <div class="form-group">
 			            <label>upload Pancard</label>
