@@ -17,6 +17,12 @@
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
   <!-- header design -->
+  <div class="fixed-bottom"> 
+    <div class="call_now"><a class="main-btn" href="tel:713-992-0916" 
+      style="border-radius:10%;padding: 10px; font-size: 14px; color:white; background-color:#002233;" >
+      <i class="fa fa-phone-alt fa-20px"></i> Call Now</a>
+    </div>
+  </div>
   <header>
     <nav class="navbar navbar-expand-lg navigation-wrap">
       <div class="container">
@@ -47,7 +53,7 @@
             </li> 
             <li>
             </li>
-            <li><a href = "signup.php" class="main-btn">Join us <i class="fas fa-phone ps-3"></i></a></li>
+            <li><a href = "signup.php" class="main-btn">Join us</a></li>
           </ul>
         </div>
       </div>
@@ -71,7 +77,10 @@
       </div>
     </div>
   </section>
-  
+
+ 
+
+ 
   <!-- section-1 departments --> 
   <section class="department p-4" id="department">
     <div class = "container text-center">
@@ -80,12 +89,12 @@
       <div class="col-6 col-sm-2 mb-4 mb-lg-0">
         <div class = "card">
           <div class="cat-image">
-            <a class="link_category_product" href="">
+            <a class="link_category_product" href="electrical_services.php">
               <img src="./images/elec_icon.jpg" class="img-fluid">
             </a>
           </div>
           <div class="cat-title">
-            <a href="#">Electrical</a>
+            <a href="electrical_services.html">Electrical</a>
           </div>
         </div>
       </div>
@@ -116,12 +125,12 @@
       <div class="col-6 col-sm-2 mb-4 mb-lg-0">
         <div class = "card">
           <div class="cat-image">
-            <a class="link_category_product" href="">
+            <a class="link_category_product" href="photo_video.php">
               <img src="./images/camera_icon.jpg" class="img-fluid">
             </a>
           </div>
           <div class="cat-title">
-            <a href="#">Photography</a>
+            <a href="photo_video.html">Photography</a>
           </div>
         </div>
       </div>
@@ -129,7 +138,9 @@
         <div class = "card">
           <div class="cat-image">
             <a class="link_category_product" href="">
-              <img src="./images/Coming Soon.jpg" class="img-fluid">
+              <video class="img-fluid" autoplay loop muted>
+                <source src="images/Sequence 01.mp4" type="video/mp4" />
+              </video>
             </a>
           </div>
           <div class="cat-title">
@@ -140,10 +151,10 @@
       <div class="col-6 col-sm-2 mb-4 mb-lg-0">
         <div class = "card">
           <div class="cat-image">
-            <p></p>
-            <p></p>
             <a class="link_category_product" href="">
-              <img src="./images/Coming Soon.jpg" class="img-fluid">
+              <video class="img-fluid" autoplay loop muted>
+                <source src="images/Sequence 01.mp4" type="video/mp4" />
+              </video>
             </a>
           </div>
           <div class="cat-title">

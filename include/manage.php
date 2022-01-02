@@ -22,13 +22,16 @@ class Manage
 		elseif ($table == "emp_reg") {
 			$sql = "SELECT e.emp_id,e.name,d.dep_name,e.address,e.phone,d.dep_id FROM emp_reg e,departments d WHERE e.dep_id = d.dep_id";
 		}
+		elseif ($table == "requests") {
+			$sql = "SELECT e.reg_id,e.name,e.email,e.contact_no,d.dep_name,e.address,e.date_of_reg FROM request_signup e,departments d WHERE e.dep_id = d.dep_id";
+		}
 		elseif ($table == "invoice_record_admin"){
 			$sql = "SELECT s.invoice_no,s.comp_id,s.invoice_date,s.sub_total,s.grand_total,s.discount,d.ser_name,d.ser_price,d.oth_ser_name,
 					d.oth_ser_price,d.p_name,d.p_comp,d.retailer,d.qty,d.p_price,c.customer_name,c.employee_id FROM invoice s,invoice_details d,
 					comp_reg c WHERE s.invoice_no = d.invoice_no AND d.comp_id = c.comp_id";
 		}
 		elseif($table == "comp_record"){
-			$sql = "SELECT c.comp_id,c.customer_name,c.customer_address,c.customer_phone_no,d.dep_name,c.employee_id,e.name,e.phone,e.address 
+			$sql = "SELECT c.comp_id,c.customer_name,c.customer_address,c.customer_phone_no,d.dep_name,c.date_of_comp,c.employee_id,e.name,e.phone,e.address 
 			FROM departments d,emp_reg e,comp_reg c WHERE c.dep_id = d.dep_id AND c.employee_id = e.emp_id";
 		}
 		$result = $this->con->query($sql) or die($this->con->error);

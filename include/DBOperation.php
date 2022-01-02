@@ -25,6 +25,21 @@ class DBOperation
 
 	}
 
+	// Registration for iterview
+	public function request_signup($vol_name,$vol_email,$vol_phone,$vol_dep_id,$vol_add){
+		$pre_stmt = $this->con->prepare("INSERT INTO `request_signup`(`name`, `email`, `contact_no`, `dep_id`, `address`) 
+		VALUES (?,?,?,?,?)");
+		$pre_stmt->bind_param("sssis",$vol_name,$vol_email,$vol_phone,$vol_dep_id,$vol_add);
+		$result = $pre_stmt->execute() or die($this->con->error);
+		
+			if ($result) {
+				return $this->con->insert_id;
+			}
+			else{
+				return "SOME ERROR";
+			}
+	}
+
     //Add New Complaint
 	public function add_complaint($cus_name,$cus_address,$cus_phone,$dep_name,$emp_id){
 		$pre_stmt = $this->con->prepare("INSERT INTO `comp_reg`(`customer_name`, `customer_address`, `customer_phone_no`, `dep_id`, `employee_id`) 
@@ -117,5 +132,5 @@ class DBOperation
 
 }
 
-//echo ($_SESSION["cm_id"]);
+
 ?>

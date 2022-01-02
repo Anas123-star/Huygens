@@ -16,6 +16,12 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+<div class="fixed-bottom"> 
+    <div class="call_now"><a class="main-btn" href="tel:713-992-0916" 
+      style="border-radius:10%;padding: 10px; font-size: 14px; color:white; background-color:#002233;" >
+      <i class="fa fa-phone-alt fa-20px"></i> Call Now</a>
+    </div>
+  </div>
   <!-- header design -->
   <header>
     <nav class="navbar navbar-expand-lg navigation-wrap">
@@ -30,6 +36,10 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.php">Home</a>
             </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#department">Departments</a>
+            </li> 
             <li class="nav-item">
               <a class="nav-link" href="#men">Men</a>
             </li> 
@@ -45,7 +55,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#reviews">Reviews</a>
             </li> 
-            <li><button class="main-btn">1200 345 123 <i class="fas fa-phone ps-3"></i></button></li>
           </ul>
         </div>
       </div>
@@ -102,7 +111,90 @@
  <p></p>
  <p></p>
   
-  <!-- section-1 departments --> 
+  <!-- section-1 departments -->
+  <section class="department p-4" id="department">
+    <div class = "container text-center">
+      <h2><u>Our Departments</u></h2>
+      <div class="row">
+      <div class="col-6 col-sm-2 mb-4 mb-lg-0">
+        <div class = "card">
+          <div class="cat-image">
+            <a class="link_category_product" href="electrical_services.php">
+              <img src="./images/elec_icon.jpg" class="img-fluid">
+            </a>
+          </div>
+          <div class="cat-title">
+            <a href="electrical_services.html">Electrical</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-2 mb-4 mb-lg-0">
+        <div class = "card">
+          <div class="cat-image">
+            <a class="link_category_product" href="salon.php">
+              <img src="./images/salon_icon.jpg" class="img-fluid">
+            </a>
+          </div>
+          <div class="cat-title">
+            <a href="salon.php">Salon And Styling</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-2 mb-4 mb-lg-0">
+        <div class = "card">
+          <div class="cat-image">
+            <a class="link_category_product" href="ac_fridge.php">
+              <img src="./images/ac_icon.jpg" class="img-fluid">
+            </a>
+          </div>
+          <div class="cat-title">
+            <a href="ac_fridge.php">AC & Refrigeration</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-2 mb-4 mb-lg-0">
+        <div class = "card">
+          <div class="cat-image">
+            <a class="link_category_product" href="photo_video.php">
+              <img src="./images/camera_icon.jpg" class="img-fluid">
+            </a>
+          </div>
+          <div class="cat-title">
+            <a href="photo_video.html">Photography</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-2 mb-4 mb-lg-0">
+        <div class = "card">
+          <div class="cat-image">
+            <a class="link_category_product" href="">
+              <video class="img-fluid" autoplay loop muted>
+                <source src="images/Sequence 01.mp4" type="video/mp4" />
+              </video>
+            </a>
+          </div>
+          <div class="cat-title">
+            <a href="#">Products</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-2 mb-4 mb-lg-0">
+        <div class = "card">
+          <div class="cat-image">
+            <a class="link_category_product" href="">
+              <video class="img-fluid" autoplay loop muted>
+                <source src="images/Sequence 01.mp4" type="video/mp4" />
+              </video>
+            </a>
+          </div>
+          <div class="cat-title">
+            <a href="#">AI Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
  <!-- section-1 Departments in detail --> 
  <!-- section-3 about--> 
  <section id="women">

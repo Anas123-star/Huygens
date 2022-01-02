@@ -14,12 +14,11 @@
         <form id="invoice_record_ad_form" onsubmit="return false">
           <div class="form-group">
             <label>Invoice Number</label>
-            <input type="number" class="form-control" name="invoice_no_ad" id="invoice_no_ad" placeholder="Enter the Invoice No and put 0 for all record">
+            <input type="number" class="form-control" name="invoice_no_ad" id="invoice_no_ad">
           </div>
           <p></p>
           <button type="submit" id = "view_invoice" name = "view_invoice" class="btn btn-primary">View invoice record</button>
         </form>
-        
       </div>
       
       <div class="modal-footer">

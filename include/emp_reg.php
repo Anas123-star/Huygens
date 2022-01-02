@@ -40,9 +40,9 @@ class User
 			$notes = "";
 			$pre_stmt = $this->con->prepare("INSERT INTO `emp_reg`(`password`, `usertype`,
             `dep_id`, `name`, `fathername`, `mothername`,  `gender`, `dob`, `phone`, `email`, `address`, `city`, `state`, `pincode`,
-            `adhaar_no`, `work_exp`,`date_of_reg`,`notes`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
-			$pre_stmt->bind_param("ssisssssssssssssss",$pass_hash,$usertype,$department,$name,$fathername,$mothername,$gender,
-            $dob,$phone,$email,$address,$city,$state,$pincode,$adhaar_no,$work_exp,$date,$notes);
+            `adhaar_no`, `work_exp`,`date_of_reg`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+			$pre_stmt->bind_param("ssissssssssssssss",$pass_hash,$usertype,$department,$name,$fathername,$mothername,$gender,
+            $dob,$phone,$email,$address,$city,$state,$pincode,$adhaar_no,$work_exp,$date);
 
 			$result = $pre_stmt->execute() or die($this->con->error);
 			if ($result) {
@@ -57,7 +57,7 @@ class User
 
 public function userLogin($emp_id,$password1)
 {
-	$pre_stmt = $this->con->prepare("SELECT emp_id, email,dep_id, usertype,password FROM emp_reg WHERE emp_id = ?");
+	$pre_stmt = $this->con->prepare("SELECT emp_id, email,dep_id,name,usertype,password FROM emp_reg WHERE emp_id = ?");
 	$pre_stmt->bind_param("s",$emp_id);
 	$pre_stmt->execute() or die($this->con->error);
 	$result = $pre_stmt->get_result();
@@ -74,6 +74,8 @@ public function userLogin($emp_id,$password1)
 			$_SESSION["usertype"] = $row["usertype"];
 			$_SESSION["emp_id"] = $row["emp_id"];
 			$_SESSION["dep_id1"] = $row["dep_id"];
+			$_SESSION["emp_name"] = $row["name"];
+			
 
 			if ($result) {
 				return $_SESSION["usertype"];

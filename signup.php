@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+        
+        <div class="overlay"><div class = "loader" ></div></div>
       <!--Nav bar-->
         <?php include_once("./templates/header.php");?>
           <br/><br/>
@@ -22,37 +24,32 @@
             <div class="card mx-auto" style="width: 20rem;">
               <div class="card-header"><b>Register for interview</b></div>
                 <div class="card-body">
-                    <form id="signup">
+                    <form id="signup_form"  onsubmit = "return false">
                         <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" name = "name" class="form-control" id="name" placeholder="Enter your full name">
+                            <label >Full Name</label>
+                            <input type="text" name = "vol_name" class="form-control" id="vol_name" placeholder="Enter your full name" required/>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email-id</label>
-                            <input type="email" name = "email" class="form-control" id="name" placeholder="Enter Email">
+                            <label >Email-id</label>
+                            <input type="email" name = "vol_email" class="form-control" id="vol_email" placeholder="Enter Email Address" required/>
                         </div>
                         <div class="form-group">
-                            <label for="phone">Contact No</label>
-                            <input type="phone" name = "phone" class="form-control" id="phone" placeholder="Enter your contact-no">
+                            <label >Contact No</label>
+                            <input type="phone" name = "vol_phone" class="form-control" id="vol_phone" placeholder="Enter your contact-no" required/>
                         </div>
                         <div class ="form-group">
-                            <label for="department">Department</label>
-                                <select class="form-select" id = "department" name="department">
-                                    <option selected>Select department</option>
-                                    <option value="1">Electrical appliances</option>
-                                    <option value="2">Photography</option>
-                                    <option value="3">Salon for men</option>
-                                </select>
+                            <label >Department</label>
+                            <select class="form-control" id="select_dep_signup" name="select_dep_signup" required/> 
+                            </select>
                         </div>
                         <div class="form-group">
-                            <label for="address">Address</label>
-                            <input type="text" name = "address" class="form-control" id="address" placeholder="Enter your address">
+                            <label >Address</label>
+                            <input type="text" name = "vol_add" class="form-control" id="vol_add" placeholder="Enter your address" required/>
                         </div>
+                        <p></p>
+                        <p></p>
+                        <button type="submit" class="btn btn-primary" style="background-color:rgb(255, 145, 0)"><i class="fa fa-lock">&nbsp;</i>Join</button>
                     </form>
-                    <p></p>
-                    <p></p>
-                    <a href="#" class="btn btn-primary" style ="background-color:#002233; border:0.8px solid black"><i class ="fa fa-lock">&nbsp;</i>Register</a>
-                    <span><a href = "index.php">Login</a></span>
                 </div>
           </div>
         </div>

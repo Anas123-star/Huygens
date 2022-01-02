@@ -53,6 +53,19 @@ $(document).ready(function(){
 
 
 
+//................invoicerecord empl.........//
+manageInvoiceEmp(1);
+function manageInvoiceEmp(em){
+	$.ajax({
+		url : DOMAIN+"/include/process.php",
+		method : "POST",
+		data : {manageInvoiceEmp:1},
+		success : function(data){
+			$("#get_invoice_record_employee").html(data);		
+		}
+	})
+}
+
 
 
 	$("body").delegate(".del_service","click",function(){
@@ -123,7 +136,51 @@ $(document).ready(function(){
 			}
 		})
 	}
+	//.................Request...................//
+	manageRequests(1);
+	function manageRequests(vn){
+		$.ajax({
+			url : DOMAIN+"/include/process.php",
+			method : "POST",
+			data : {manageRequests:1},
+			success : function(data){
+				$("#get_requests").html(data);		
+			}
+		})
+	}
 
+	//----------------Complaint Record-------------//manageRequests(1);
+	manageComplaints(1);
+	function manageComplaints(vn){
+		$.ajax({
+			url : DOMAIN+"/include/process.php",
+			method : "POST",
+			data : {manageComplaints:1},
+			success : function(data){
+				$("#get_view_complaints").html(data);		
+			}
+		})
+	}
+
+	//...............Delete Requests.................//
+	$("body").delegate(".del_requests","click",function(){
+		var did = $(this).attr("did");
+		if (confirm("Are you sure ? You want to delete..!")) {
+			$.ajax({
+				url : DOMAIN+"/include/process.php",
+				method : "POST",
+				data : {deleteRequests:1,id:did},
+				success : function(data){
+					if ($.trim(data) == "DELETED") {
+						alert("Employee record is deleted");
+						manageRequests(1);
+					}else{
+						alert(data);
+					}		
+				}
+			})
+		}
+	})
 	//.............Delete Employees...................//
 	
 	$("body").delegate(".del_employees","click",function(){
@@ -135,7 +192,7 @@ $(document).ready(function(){
 				data : {deleteEmployees:1,id:did},
 				success : function(data){
 					if ($.trim(data) == "DELETED") {
-						alert("Employee record is deleted");
+						alert("Requests record is deleted");
 						manageEmployees(1);
 					}else{
 						alert(data);

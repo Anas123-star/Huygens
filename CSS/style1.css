@@ -229,6 +229,7 @@ p {
   color:var(--white-color);
 }
 
+
 /*
 ==========================================
   our-menu Design
@@ -496,6 +497,11 @@ p {
 footer section Design
 ==========================================
 */
+.call_now{
+  margin-left: 90%;
+  margin-bottom: 5px;
+}
+
 .footer{
   background: var(--black-color);
 } 

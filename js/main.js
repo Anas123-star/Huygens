@@ -279,6 +279,7 @@ $(document).ready(function(){
 				$("#select_department").html(data);
 				$("#select_department_emp").html(data);
 				$("#select_department_comp").html(data);
+				$("#select_dep_signup").html(data);
 
 			}
 		})
@@ -455,6 +456,23 @@ $(document).ready(function(){
 			data  : $("#invoice_record_ad_form").serialize(),
 			success : function(data){
 				window.location.href = DOMAIN+"/manage_invoice_admin.php";
+			}
+		})
+	})
+
+	$("#signup_form").on("submit",function(){
+		$.ajax({
+			url : DOMAIN+"/include/process.php",
+			method : "POST",
+			data  : $("#signup_form").serialize(),
+			success : function(data){
+				if ($.trim(data) == "SOME ERROR") {
+					alert("Some Error");
+				}
+				else{
+				$("#signup_form").trigger("reset");
+				alert("You are successfully registered we will contact you soon for an interview");
+				}
 			}
 		})
 	})

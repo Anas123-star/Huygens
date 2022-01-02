@@ -30,12 +30,13 @@ include_once("./database/constants.php");
                         <img src="./images/user.png" class="card-img-top mx-auto" style = "width:60%" alt="Login Icon">
                         <div class="card-body">
                             <h5 class="card-title">Profile Info</h5>
-                            <p class="card-text"><i class="fa fa-user">&nbsp;</i>Mohd Anas Khan</p>
-                            <p class="card-text"><i class="fa fa-user">&nbsp;</i>Admin</p>
-                            <p class="card-text">Last Login: XXXXXX</p>
-                            <a href="#" class="btn btn-primary"><i class="fa fa-edit">&nbsp;</i>Edit Profile</a>
+                            <p class="card-text"><i class="fa fa-user">&nbsp;</i><?php echo($_SESSION["emp_name"])?></p>
+                            <p class="card-text"><i class="fa fa-globe">&nbsp;</i><?php echo($_SESSION["usertype"])?></p>
+                            <p class="card-text"><i class="fa fa-envelope">&nbsp;</i><?php echo($_SESSION["email"])?></p>
+                            <p></p>
                         </div>
                     </div>
+                    
                 </div>
                 <div class = "col-md-8" style="background-color:#3f0d12;background-image :linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);">
                     <p></p>
@@ -48,7 +49,7 @@ include_once("./database/constants.php");
                                     <h5 class="card-title">Complaints and departments</h5>
                                     <p class="card-text">Here you can register new complaints</p>
                                     <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#form_choose_department_comp">Add new complaints</a>
-                                    <a href="#" class="btn btn-primary">View</a>
+                                    <a href="view_complaints.php" class="btn btn-primary">View</a>
                              </div>
                             </div>
                         </div>
@@ -56,9 +57,9 @@ include_once("./database/constants.php");
                         <div class = "col-sm-6">
                             <div class="card" style="background-color:#002233; color:white" >
                                 <div class="card-body">
-                                    <h5 class="card-title">Requests</h5>
-                                    <p class="card-text">Here you can see new requests from employees for registration</p>
-                                    <a href="#" class="btn btn-primary">View</a>
+                                    <h5 class="card-title" style="font-size:16px">Requests</h5>
+                                    <p class="card-text" style="font-size:12px">Here you can see new requests from employees for registration</p>
+                                    <a href="manage_requests.php" class="btn btn-primary">View</a>
                                 </div>
                             </div>
                         </div>

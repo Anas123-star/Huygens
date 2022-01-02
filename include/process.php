@@ -102,6 +102,7 @@ if (isset($_POST["invoice_no_ad"])){
 	echo $invoice_no;
 }
 
+//
 //.........................Services.....................//
 
 if (isset($_POST["manageService"])) {
@@ -198,7 +199,80 @@ if (isset($_POST["deleteEmployees"])) {
 	echo $result;
 }
 //echo $_SESSION["dept_id"];
+//......................Requests....................//
+if (isset($_POST["manageRequests"])) {
+	$m = new Manage();
+	$result = $m->manageRecordWithPagination("requests");
+	$rows = $result["rows"];
+	if (count($rows) > 0) {
+		$n = 1;
+		foreach ($rows as $row) {
+			if (true) {
+			?>
+					<tr>
+					<td><?php echo $n; ?></td>
+					<td><?php echo $row["reg_id"]; ?></td>
+					<td><?php echo $row["name"]; ?></td>
+					<td><?php echo $row["email"]; ?></td>
+					<td><?php echo $row["contact_no"]; ?></td>
+					<td><?php echo $row["dep_name"]; ?></td>
+					<td><?php echo $row["address"]; ?></td>
+					<td><?php echo $row["date_of_reg"]; ?></td>
+			        <td>
+			        	<a href="#" did="<?php echo $row['reg_id']; ?>" class="btn btn-danger btn-sm del_requests">Delete</a>
+						
+			        </td>
+			      </tr>
+			<?php
+			$n++;
+			}
+		}
+		?>
+		<?php
+		exit();
+	}
 
+}
+//---------------Complaints View--------------------//
+if (isset($_POST["manageComplaints"])) {
+	$m = new Manage();
+	$result = $m->manageRecordWithPagination("comp_record");
+	$rows = $result["rows"];
+	if (count($rows) > 0) {
+		$n = 1;
+		foreach ($rows as $row) {
+			if (true) {
+			?>
+					<tr>
+					<td><?php echo $n; ?></td>
+					<td><?php echo $row["comp_id"]; ?></td>
+					<td><?php echo $row["customer_name"]; ?></td>
+					<td><?php echo $row["customer_address"]; ?></td>
+					<td><?php echo $row["customer_phone_no"]; ?></td>
+					<td><?php echo $row["dep_name"]; ?></td>
+					<td><?php echo $row["employee_id"]; ?></td>
+					<td><?php echo $row["name"]; ?></td>
+					<td><?php echo $row["address"]; ?></td>
+					<td><?php echo $row["date_of_comp"]; ?></td>
+
+			      </tr>
+			<?php
+			$n++;
+			}
+		}
+		?>
+		<?php
+		exit();
+	}
+
+}
+//................delete requests...........................//
+
+if (isset($_POST["deleteRequests"])) {
+	$m = new Manage();
+	$result = $m->deleteRecord("request_signup","reg_id",$_POST["id"]);
+	echo $result;
+}
 //-------------------------Order new service--------------//
 
 if (isset($_POST["getNewOrderItem"])) {
@@ -271,6 +345,15 @@ if (isset($_POST["getproduct"])) {
 }
 
 // get Other price
+
+// .............................Sign Up Form ..............//
+
+if (isset($_POST["vol_email"])) {
+	$user = new DBOperation();
+	$result = $user->request_signup($_POST["vol_name"],$_POST["vol_email"],$_POST["vol_phone"],$_POST["select_dep_signup"],$_POST["vol_add"]);
+	echo $result;
+}
+
 //..............................Invoice Form..............//
 
 if ((isset($_POST["c_id"]))) {
@@ -328,6 +411,48 @@ if (isset($_POST["manageServiceEmp"])) {
 		exit();
 	}
 }
+
+//...............invoicerecord emp..........//
+if (isset($_POST["manageInvoiceEmp"])) {
+	$m = new Manage();
+	$result = $m->manageRecordWithPagination("invoice_record_admin");
+	$rows = $result["rows"];
+	if (count($rows) > 0) {
+		$n = 1;
+		foreach ($rows as $row) {
+			if ($row["employee_id"]==$_SESSION["emp_id"]) {
+			?>
+				<tr>
+					<td><?php echo $n; ?></td>
+					<td><?php echo $row["invoice_no"]; ?></td>
+					<td><?php echo $row["comp_id"]; ?></td>
+					<td><?php echo $row["invoice_date"]; ?></td>
+					<td><?php echo $row["sub_total"]; ?></td>
+					<td><?php echo $row["grand_total"]; ?></td>
+					<td><?php echo $row["discount"]; ?></td>
+					<td><?php echo $row["ser_name"]; ?></td>
+					<td><?php echo $row["ser_price"]; ?></td>
+					<td><?php echo $row["oth_ser_name"]; ?></td>
+					<td><?php echo $row["oth_ser_price"]; ?></td>
+					<td><?php echo $row["p_name"]; ?></td>
+					<td><?php echo $row["p_comp"]; ?></td>
+					<td><?php echo $row["retailer"]; ?></td>
+					<td><?php echo $row["qty"]; ?></td>
+					<td><?php echo $row["p_price"]; ?></td>
+					<td><?php echo $row["customer_name"]; ?></td>
+					<td><?php echo $row["employee_id"]; ?></td>
+				</tr>
+			<?php
+			$n++;
+			}
+		}
+		?>
+		<?php
+		exit();
+	}
+}
+
+
 
 if (isset($_POST["manageInvoiceAdmin"])) {
 	$m = new Manage();

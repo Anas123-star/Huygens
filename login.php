@@ -50,12 +50,8 @@
                     <input type="password" class="form-control" id="log_password" name = "log_password" placeholder="Enter your password">
                     <small id="p_error" class="form-text text-muted"></small>
                   </div>
-                  <button type="submit" class="btn btn-primary"><i class="fa fa-lock">&nbsp;</i>Login</button>
-			              <span><a href="signup.php">Signup</a></span>
+                  <button type="submit" class="btn btn-primary"><i class="fa fa-lock">&nbsp;</i>Login</button
                 </form>
-                <div class ="card-footer">
-                  <a href="#">Forget Password ?</a>
-                </div>
             </div>  
           </div>
     </body>

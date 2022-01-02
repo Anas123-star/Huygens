@@ -122,24 +122,9 @@
                         <input type ="number" class="form-control" name="work_exp" id="work_exp" placeholder="Enter in months" >
                         <small id="w_error" class="form-text text-muted"></small>   
                     </div>
-                    <div class="form-group">
-			            <label>upload Adhaarcard</label>
-			            <input type="file" id = "myimg" name="myimg" class="form-control" multiple />
-		            </div>
-                    <div class="form-group">
-			            <label>upload Pancard</label>
-			            <input type="file" name="pancard" class="form-control" multiple />
-		            </div>
-                    <div class="form-group">
-			            <label>upload Photo</label>
-			            <input type="file" name="photo" class="form-control" multiple />
-                    </div>
-                    <div class="form-group form-check">
-                      <input type="checkbox" class="form-check-input" id="termsandcondition">
-                      <label class="form-check-label" for="termsandcondition">I agree with the terms and condition</label>
-                    </div>
+                    <p></p>
+                    <p></p>
                     <input type="submit" class="btn btn-primary" name = "submit">
-          
                 </form>
                 </div>
             </div>  

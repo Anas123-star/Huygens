@@ -30,10 +30,10 @@ include_once("./database/constants.php");
                         <img src="./images/user.png" class="card-img-top mx-auto" style = "width:60%" alt="Login Icon">
                         <div class="card-body">
                             <h5 class="card-title">Profile Info</h5>
-                            <p class="card-text"><i class="fa fa-user">&nbsp;</i>Mohd Anas Khan</p>
-                            <p class="card-text"><i class="fa fa-user">&nbsp;</i>Admin</p>
-                            <p class="card-text">Last Login: XXXXXX</p>
-                            <a href="#" class="btn btn-primary"><i class="fa fa-edit">&nbsp;</i>Edit Profile</a>
+                            <p class="card-text"><i class="fa fa-user">&nbsp;</i><?php echo($_SESSION["emp_name"])?></p>
+                            <p class="card-text"><i class="fa fa-globe">&nbsp;</i><?php echo($_SESSION["usertype"])?></p>
+                            <p class="card-text"><i class="fa fa-envelope">&nbsp;</i><?php echo($_SESSION["email"])?></p>
+                            
                         </div>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ include_once("./database/constants.php");
                                     <h5 class="card-title">Invoice</h5>
                                     <p class="card-text">Here you can make new invoices</p>
                                     <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#form_complaintnumber">Click here</a>
-                                    <a href="#" class="btn btn-primary">View</a>
+                                    <a href="manage_invoice_emp.php" class="btn btn-primary">View</a>
                              </div>
                             </div>
                         </div>
