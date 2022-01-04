@@ -21,7 +21,7 @@
       style="border-radius:10%;padding: 10px; font-size: 14px; color:white; background-color:#002233;" >
       <i class="fa fa-phone-alt fa-20px"></i> Call Now</a>
     </div>
-  </div>
+</div>
   <!-- header design -->
   <header>
     <nav class="navbar navbar-expand-lg navigation-wrap">
@@ -229,6 +229,7 @@
           </div>
           <div class="cat-title">
             <a href="#">Central AC</a>
+            <p>Service currently unavailable</p>
           </div>
         </div>
       </div>
@@ -241,6 +242,7 @@
           </div>
           <div class="cat-title">
             <a href="#">cassette AC</a>
+            <p>Service currently unavailable</p>
           </div>
         </div>
       </div>
@@ -253,6 +255,7 @@
           </div>
           <div class="cat-title">
             <a href="#">Ductable AC</a>
+            <p>Service currently unavailable</p>
           </div>
         </div>
       </div>
@@ -271,7 +274,7 @@
             </a>
           </div>
           <div class="cat-title">
-            <a href="#">Electrical</a>
+            <a href="#">Inverter Refrigerator</a>
           </div>
         </div>
       </div>
@@ -280,11 +283,11 @@
         <div class = "card">
           <div class="cat-image">
             <a class="link_category_product" href="">
-              <img src="./images/ac_icon.jpg" class="img-fluid">
+              <img src="./images/non_inverter_fridge.png" class="img-fluid">
             </a>
           </div>
           <div class="cat-title">
-            <a href="#">AC & Refrigeration</a>
+            <a href="#">Non-Inverter Refrigerator</a>
           </div>
         </div>
       </div>
@@ -292,23 +295,11 @@
         <div class = "card">
           <div class="cat-image">
             <a class="link_category_product" href="">
-              <img src="./images/camera_icon.jpg" class="img-fluid">
+              <img src="./images/deep_freezer.jpg" class="img-fluid">
             </a>
           </div>
           <div class="cat-title">
-            <a href="#">Photography</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-sm-2 mb-4 mb-lg-0">
-        <div class = "card">
-          <div class="cat-image">
-            <a class="link_category_product" href="">
-              <img src="./images/roomheater.jpeg" class="img-fluid">
-            </a>
-          </div>
-          <div class="cat-title">
-            <a href="#">upcoming Products</a>
+            <a href="#">Deep Freezer</a>
           </div>
         </div>
       </div>
@@ -369,7 +360,7 @@
             </div>
             <div class="col-6 col-sm-2 mb-4 mb-lg-0">
               <div class="card border" style="background-color: #002233;">
-                <img src="images/party make up studio hd 3000.jpeg" class="img-fluid">
+                <img src="images/winac_1ton_heating_coil.jpg" class="img-fluid">
                 <div class="p-3">
                   <p style="color: #FFC222;">1-Ton Heating Coil (-gas)</p>
                   <h5 style="color: white;">Rs-<?php echo(3499);?></h5>
@@ -378,7 +369,7 @@
             </div>
             <div class="col-6 col-sm-2 mb-4 mb-lg-0">
               <div class="card border" style="background-color: #002233;">
-                <img src="images/ceralin party make up 2000.jpeg" class="img-fluid">
+                <img src="images/winac_1.5ton_heating_coil.jpg" class="img-fluid">
                 <div class="p-3">
                   <p style="color: #FFC222;">1.5-Ton Heating Coil (-gas)</p>
                   <h5 style="color: white;">Rs-<?php echo(3999);?></h5>
@@ -389,7 +380,7 @@
           <div class="row pt-5">
             <div class="col-6 col-sm-2 mb-4 mb-lg-0">
               <div class="card border" style="background-color: #002233;">
-                <img src="images/Hair cut base 500.jpeg" class="img-fluid">
+                <img src="images/winac_2ton_heating_coil.jpg" class="img-fluid">
                 <div class="p-3">
                   <P style="color: #FFC222;">2-Ton Heating Coil (-gas)</P>
                   <h5 style="color: white;">Rs-<?php echo(5499);?></h5>
@@ -400,7 +391,7 @@
               <div class="card border" style="background-color: #002233;">
                 <img src="images/winac_cooling-coils.jpg" class="img-fluid">
                 <div class="p-3">
-                  <p style="color: #FFC222;">1.5-Ton Cooling Coil</p>
+                  <p style="color: #FFC222;">1.5-Ton Cooling <br>Coil</p>
                   <h5 style="color: white;">Rs-<?php echo(4499);?></h5>
                 </div>
               </div>
@@ -409,7 +400,7 @@
               <div class="card border" style="background-color: #002233;">
                 <img src="images/winac_cooling_2-coil.jpg" class="img-fluid">
                 <div class="p-3">
-                  <p style="color: #FFC222;">2-Ton Cooling Coil</p>
+                  <p style="color: #FFC222;">2-Ton Cooling <br>Coil</p>
                   <h5 style="color: white;">Rs-<?php echo(5999);?></h5>
                 </div>
               </div>
@@ -456,7 +447,7 @@
               <div class="card border" style="background-color: #002233;">
                 <img src="images/winac_fanmotor.jpg" class="img-fluid">
                 <div class="p-3">
-                  <p style="color: #FFC222;">Fan Motor Change</p>
+                  <p style="color: #FFC222;">Fan Motor <br>Change</p>
                   <h5 style="color: white;">Rs-<?php echo(2799);?></h5>
                 </div>
               </div>
@@ -518,7 +509,7 @@
               </div>
               <div class="col-6 col-sm-2 mb-4 mb-lg-0">
                 <div class="card border" style="background-color: #002233;">
-                  <img src="images/party make up studio hd 3000.jpeg" class="img-fluid">
+                  <img src="images/spac_1ton_heating_coil.jpg" class="img-fluid">
                   <div class="p-3">
                     <p style="color: #FFC222;">1-Ton Heating Coil (-gas)</p>
                     <h5 style="color: white;">Rs-<?php echo(3499);?></h5>
@@ -527,7 +518,7 @@
               </div>
               <div class="col-6 col-sm-2 mb-4 mb-lg-0">
                 <div class="card border" style="background-color: #002233;">
-                  <img src="images/ceralin party make up 2000.jpeg" class="img-fluid">
+                  <img src="images/winac_1ton_heating_coil.jpg" class="img-fluid">
                   <div class="p-3">
                     <p style="color: #FFC222;">1.5-Ton Heating Coil (-gas)</p>
                     <h5 style="color: white;">Rs-<?php echo(3999);?></h5>
@@ -538,7 +529,7 @@
             <div class="row pt-5">
               <div class="col-6 col-sm-2 mb-4 mb-lg-0">
                 <div class="card border" style="background-color: #002233;">
-                  <img src="images/Hair cut base 500.jpeg" class="img-fluid">
+                  <img src="images/winac_1.5ton_heating_coil.jpg" class="img-fluid">
                   <div class="p-3">
                     <P style="color: #FFC222;">2-Ton Heating Coil (-gas)</P>
                     <h5 style="color: white;">Rs-<?php echo(5499);?></h5>
@@ -549,7 +540,7 @@
                 <div class="card border" style="background-color: #002233;">
                   <img src="images/spac_coolingcoil_1.5.jpg" class="img-fluid">
                   <div class="p-3">
-                    <p style="color: #FFC222;">1.5-Ton Cooling Coil</p>
+                    <p style="color: #FFC222;">1.5-Ton Cooling <br>Coil</p>
                     <h5 style="color: white;">Rs-<?php echo(4499);?></h5>
                   </div>
                 </div>
@@ -558,7 +549,7 @@
                 <div class="card border" style="background-color: #002233;">
                   <img src="images/spac_coolingcoil_2.jpg" class="img-fluid">
                   <div class="p-3">
-                    <p style="color: #FFC222;">2-Ton Cooling Coil</p>
+                    <p style="color: #FFC222;">2-Ton Cooling <br>Coil</p>
                     <h5 style="color: white;">Rs-<?php echo(5999);?></h5>
                   </div>
                 </div>
@@ -626,6 +617,89 @@
 </section>
 <!-- section-4 explore food--> 
 
+<section id="service">
+  <div class="service-section wrapper" >
+    <div class="container food-type" style="background-color: black;">
+      <div class="row align-items-center" id="washing_machine">
+        <div class="col-lg-7 col-md-12 mb-lg-0 mb-5">
+          <div class="card border-0">
+            <img src="images/fridge.jpg" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-12 text-sec">
+          <h2>Inverter Refrigerator </h2>
+            <p>Services Offered</p>
+            <ul class="list-unstyled py-3">
+              <li style="color: cadetblue;">
+                Inverter Fridge Service : Rs-399
+              </li >
+            <li style="color: cadetblue;">
+             Inverter Fridge Gas Service : Rs-1799
+            </li >
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p></p>
+    <div class="container food-type" style="background-color: white;">
+      <div class="row align-items-center" id="ro_filter">
+        <div class="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
+          <h2>Non-Inverter Refrigerator</h2>
+          <p>Services Offered</p>
+          <ul class="list-unstyled py-3">
+            <li>Non-Inverter Fridge Service : Rs-399</li>
+            <li>Non-Inverter Gas Service : Rs-1199</li>
+          </ul>
+         
+        </div>
+        <div class="col-lg-7 col-md-12">
+          <div class="card border-0">
+            <img src="images/non_inverter_fridge.png" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container food-type" style="background-color: black;">
+      <div class="row align-items-center" id="washing_machine">
+        <div class="col-lg-7 col-md-12 mb-lg-0 mb-5">
+          <div class="card border-0">
+            <img src="images/deep_freezer.jpg" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-12 text-sec">
+          <h2>Deep Freezer </h2>
+            <p>Services Offered</p>
+            <ul class="list-unstyled py-3">
+              <li style="color: cadetblue;">
+                Deep Freezer Service : Rs-549
+              </li >
+            <li style="color: cadetblue;">
+              Belt Change : Rs-199
+            </li >
+            <li style="color: cadetblue;">
+              Cleaning : Rs-199
+            </li>
+            <li style="color: cadetblue;">
+              Motor Change : Rs-199
+            </li>
+            <li style="color: cadetblue;">
+              Dryer Service : Rs-199
+            </li>
+            <li style="color: cadetblue;">
+              Timer Service : Rs-199
+            </li>
+            <li style="color: cadetblue;">
+              Gear box Service : Rs-199
+            </li>
+            <li style="color: cadetblue;">
+              Pulsator Service : Rs-199
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+  </div>
+</section>
 
  <!-- Section-5 testimonial--> 
 
@@ -702,7 +776,7 @@
         <div class="col-sm-12">
           <div class="footer-copy">
             <div class="copy-right text-center pt-5">
-              <p class="text-light">© 2021. PIZZA. All rights reserved.</p>
+              <p class="text-light">© 2022. HUYGENS. All rights reserved.</p>
             </div>
           </div>
         </div>

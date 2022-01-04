@@ -26,7 +26,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navigation-wrap">
       <div class="container">
-        <a class="navbar-brand" href="#"> <h2 style="color: #002233;">Salon & Styling</h2>      </a>
+        <a class="navbar-brand" href="#"> <h2 style="color: #002233;">Salon & Styling</h2> </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <!-- <span class="navbar-toggler-icon"></span> -->
           <i class="fas fa-stream navbar-toggler-icon"></i>
@@ -794,7 +794,7 @@
         <div class="col-sm-12">
           <div class="footer-copy">
             <div class="copy-right text-center pt-5">
-              <p class="text-light">© 2021. PIZZA. All rights reserved.</p>
+              <p class="text-light">© 2022. HUYGENS. All rights reserved.</p>
             </div>
           </div>
         </div>

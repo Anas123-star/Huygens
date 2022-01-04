@@ -40,6 +40,8 @@ ol {
   --black-color: #1E1D23;
   --primary-font: 'Roboto', sans-serif;
   --secondry-font: 'Quicksand', sans-serif;
+  
+  --lightbox: #242424;
 }
 
 html {
@@ -51,6 +53,11 @@ body {
   font-size: 100%;
   font-weight: 400;
 }
+
+
+/*----------------------------------*/
+/* IMAGE GRID STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /*
 =========================================
@@ -229,6 +236,20 @@ p {
   color:var(--white-color);
 }
 
+/* 
+Top banner for photography
+
+*/
+.photo_video{
+  width:100%;
+  background:url('../images/photo_banner.jpg') no-repeat center;
+  background-size:cover;
+
+  padding:16.875rem 0 9.375rem;
+}
+.photo_video p{
+  color:var(--white-color);
+}
 
 /*
 ==========================================
@@ -516,42 +537,68 @@ footer section Design
  
 
 /* Form Control */
-.newsletter .form-control{
-  height:5rem;
-  padding:0 1.25rem;
-  font-size: 0.875rem;
-  width:100%;
-  border-radius: 0;
-  background:transparent;
-  border:0.1875rem solid var(--white-color);
-  color:var(--black-color);
-  font-weight: 700;
+.image-grid figure {
+  margin-bottom: 0;
 }
-.newsletter .main-btn{
-  height:3.225rem;
-  padding:0 1.25rem;
-  font-size: 0.875rem;
-  border-radius: 0;
-  background-color: var(--white-color);
-  border:0.1875rem solid var(--white-color);
-  color:var(--black-color);
-  font-weight: 700;
+ 
+.image-grid img {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s;
 }
-.newsletter:hover .form-control{
-  border:0.1875rem solid var(--primary-color);
-  color:var(--black-color);
+ 
+.image-grid a:hover img {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.35);
 }
-.newsletter:hover .main-btn{
- background:var(--primary-color); 
- border:0.1875rem solid var(--primary-color);
+ 
+/* LIGHTBOX STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.lightbox-modal .modal-content {
+  background: var(--lightbox);
 }
-.newsletter .form-control:hover,
-.newsletter .form-control:focus{
-  outline:none;
-  box-shadow: none;
-  border-color:var(--primary-color);
+ 
+.lightbox-modal .btn-close {
+  position: absolute;
+  top: 20px;
+  right: 18px;
+  font-size: 1.2rem;
+  z-index: 10;
+}
+ 
+.lightbox-modal .modal-body {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  text-align: center;
+}
+ 
+.lightbox-modal img {
+  width: auto;
+  max-height: 100vh;
+  max-width: 100%;
+}
+ 
+.lightbox-modal .carousel-caption {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(36, 36, 36, 0.75);
+}
+ 
+.lightbox-modal .carousel-control-prev,
+.lightbox-modal .carousel-control-next {
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  width: auto;
+}
+ 
+.lightbox-modal .carousel-control-prev {
+  left: 10px;
+}
+ 
+.lightbox-modal .carousel-control-next {
+  right: 10px;
 }
 
-        
       
 

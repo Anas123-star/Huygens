@@ -60,6 +60,7 @@
     </nav>
   </header> 
   
+  
   <!-- section-1 top-banner --> 
   <section id="home">
     <div class="container-fluid px-0 top-banner">
@@ -275,46 +276,8 @@
   <div class="wrapper about-section">
     <div class="container text-center">
       <div class="explore-food wrapper">
-        <h2>About Us</h2>
-        <div class="container">
-          <div class="row pt-5">
-            <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
-              <div class="card border" style="background-color: aliceblue;">
-                <img src="images/grinder.jpeg" class="img-fluid">
-                <div class="p-3">
-                  <h5>10 Reasons To Do A Digital Detox Challenge</h5>
-                  <p>Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec
-                    hac…</p>
-                  <button class="mt-2 main-btn">Read More</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
-              <div class="card border" style="background-color: black;">
-                <img src="images/geyser.jpeg" class="img-fluid">
-                <div class="p-3">
-                  <h5>The Ultimate Hangover Burger: Egg in a Hole Burger Grilled Cheese</h5>
-                  <p>Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec
-                    hac…</p>
-                  <button class="mt-2 main-btn">Read More</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
-              <div class="card border" style="background-color:brown;">
-                <img src="images/roomheater.jpeg" class="img-fluid">
-                <div class="p-3">
-                  <h5>Traditional Soft Pretzels with Sweet Beer Cheese</h5>
-                  <p>Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec
-                    hac…</p>
-                  <button class="mt-2 main-btn">Read More</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-      <h2>Our Team</h2>
+      <h2>Vision and Strategy</h2>
       <div class="row">
         <div class="col-sm-12 col-lg-10 offset-lg-1">
           <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
@@ -328,28 +291,21 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="carousel-caption">
-                  <img src="images/img28.jpeg">
-                  <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                    live the blind texts. "</p>
-                  <h5>Johnthan Doe - UX Designer</h5>
-                </div>
+                <h2>Services</h2>
+                  <p >"Our aim at Huygens To provide domestic sevices at your doorsteps.
+                     Our team of experts believe in minimizing the customer efforts - improving the quality of life."</p>
+                
               </div>
               <div class="carousel-item">
-                <div class="carousel-caption">
-                  <img src="images/img25.jpeg">
-                  <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                    live the blind texts. "</p>
-                  <h5>Maccy Doe - Front End</h5>
-                </div>
+                  <h2>Products</h2>
+                  <p>"Huygens is focused at providing state of the art electrical and electronic monitoring devices for your homes, places of work, Industries at best afforable prices."</p>
+                  
               </div>
               <div class="carousel-item">
-                <div class="carousel-caption">
-                  <img src="images/airbrush-bridal-makeup-14000.jpg">
-                  <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                    live the blind texts. "</p>
-                  <h5>Johnthan Doe - UX Designer</h5>
-                </div>
+                <h2>AI Services</h2>
+                  <p>"Huygens AI, is aimed at multi-faceted services, solving complex problems using <br>Intelligent Systems."</p>
+                 
+              
               </div>
             </div>
           </div>

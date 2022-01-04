@@ -16,17 +16,17 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
-    <div class="fixed-bottom"> 
-        <div class="call_now"><a class="main-btn" href="tel:713-992-0916" 
-          style="border-radius:10%;padding: 10px; font-size: 14px; color:white; background-color:#002233;" >
-          <i class="fa fa-phone-alt fa-20px"></i> Call Now</a>
-        </div>
-    </div>
-  <!-- header design -->
+  
+<div class="fixed-bottom"> 
+  <div class="call_now"><a class="main-btn" href="tel:713-992-0916" 
+    style="border-radius:10%;padding: 10px; font-size: 14px; color:white; background-color:#002233;" >
+    <i class="fa fa-phone-alt fa-20px"></i> Call Now</a>
+  </div>
+</div>
   <header>
     <nav class="navbar navbar-expand-lg navigation-wrap">
       <div class="container">
-        <a class="navbar-brand" href="#"> <h2 style="color: #002233;">Electrical Services</h2>      </a>
+        <a class="navbar-brand" href="#"> <h2 style="color: #002233;">Electrical Services</h2></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <!-- <span class="navbar-toggler-icon"></span> -->
           <i class="fas fa-stream navbar-toggler-icon"></i>
@@ -55,7 +55,7 @@
     </nav>
   </header> 
 <p></p>
-<p></p>
+
   <!-- section-1 top-banner --> 
   <section id="salon_bg">
   <div class="wrapper salon_bg-section">
@@ -90,7 +90,7 @@
                   <h5>Maccy Doe - Front End</h5>
               </div>
               <div class="carousel-item">
-                  <img src="images/img2.jpeg" class="img-fluid">
+                  <img src="images/roomheater.jpeg" class="img-fluid">
                   <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
                     live the blind texts. "</p>
                   <h5>Johnthan Doe - UX Designer</h5>
@@ -318,10 +318,11 @@
           </div>
           <div class="col-lg-5 col-md-12 text-sec">
             <h2>Washing Machines </h2>
-            <p>Healthy operation and maintenance of your household Electrical appliances by Professionals 
-              <br>One-month warranty <br>At your door within one hour.</p>
               <p>Services Offered</p>
               <ul class="list-unstyled py-3">
+                <li style="color: cadetblue;">
+                  Fully automatic washing machine service : Rs-599
+                </li >
               <li style="color: cadetblue;">
                 Belt Change : Rs-199
               </li >
@@ -334,9 +335,16 @@
               <li style="color: cadetblue;">
                 Dryer Service : Rs-199
               </li>
+              <li style="color: cadetblue;">
+                Timer Service : Rs-199
+              </li>
+              <li style="color: cadetblue;">
+                Gear box Service : Rs-199
+              </li>
+              <li style="color: cadetblue;">
+                Pulsator Service : Rs-199
+              </li>
             </ul>
-             
-            <button class="main-btn mt-4">Checkout For More Service</button>
           </div>
         </div>
       </div>
@@ -345,13 +353,12 @@
         <div class="row align-items-center" id="ro_filter">
           <div class="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
             <h2>RO & Filter</h2>
-            <h4 style="color: black;">Look Good, Feel Good</h4>
-            <p>Changing the paradigm of your styling over the wide range of bridal to haircut <br> Bringing your stylist at your doorstep</p>
+            <p>Services Offered</p>
             <ul class="list-unstyled py-3">
               <li>Installation : Rs-199</li>
               <li>Filter Change : Rs-299</li>
             </ul>
-            <a class="main-btn mt-4" href="">Checkout For More Services</a>
+           
           </div>
           <div class="col-lg-7 col-md-12">
             <div class="card border-0">
@@ -370,13 +377,13 @@
           </div>
           <div class="col-lg-5 col-md-12 text-sec">
             <h2>Cooler</h2>
-            <p>Longivity enhancement of your cooling and refrigeration systems</p>
+            <p>Services Offered</p>
             <ul class="list-unstyled py-3">
               <li>Pump Installation : Rs-199</li>
               <li>Grass Change : Rs-499</li>
               <li>Circuit Problem : Rs-69</li>
             </ul>
-            <a href = "" class="main-btn mt-4">Checkout For More Services</a>
+           
           </div>
         </div>
       </div>
@@ -385,15 +392,14 @@
         <div class="row align-items-center" id="fan">
           <div class="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
             <h2 style="color: white;">Fan</h2>
-            <h4 style="color: rgba(20, 19, 19, 0.726);">Capturing Memories</h4>
-            <p>Relive your precious moments captured by our Professionals</p>
+            <p>Services Offered</p>
             <ul class="list-unstyled py-3">
               <li>Installation : Rs-99</li>
               <li>Winding Change : Rs-399</li>
               <li>Portfolio Creation</li>
               <li>Product Photography</li>
             </ul>
-            <button class="main-btn mt-4">Checkout For More Services</button>
+            
           </div>
           <div class="col-lg-7 col-md-12">
             <div class="card border-0">
@@ -412,13 +418,15 @@
           </div>
           <div class="col-lg-5 col-md-12 text-sec">
             <h2>Geyser</h2>
-            <p>Longivity enhancement of your cooling and refrigeration systems</p>
+            <p>Services Offered</p>
             <ul class="list-unstyled py-3">
-              <li>Gas Geyser Installation : Rs-199</li>
-              <li>Electric Geyser Installation : Rs-199</li>
-              <li>Geyser Rod Change : Rs-199</li>
+              
+              <li>Gas Geyser Service : Rs-199</li>
+              <li>Gas Geyser Installation : Rs-299</li>
+              <li>Electric Geyser Installation : Rs-299</li>
+              <li>Geyser Rod Service : Rs-199</li>
             </ul>
-            <a href = "" class="main-btn mt-4">Checkout For More Services</a>
+         
           </div>
         </div>
       </div>
@@ -427,12 +435,10 @@
         <div class="row align-items-center" id="grinder">
           <div class="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
             <h2 style="color: white;">Grinder</h2>
-            <h4 style="color: rgba(20, 19, 19, 0.726);">Capturing Memories</h4>
-            <p>Relive your precious moments captured by our Professionals</p>
+            <p>Services Offered</p>
             <ul class="list-unstyled py-3">
               <li>Service : Rs-199</li>
             </ul>
-            <button class="main-btn mt-4">Checkout For More Services</button>
           </div>
           <div class="col-lg-7 col-md-12">
             <div class="card border-0">
@@ -451,11 +457,10 @@
           </div>
           <div class="col-lg-5 col-md-12 text-sec">
             <h2>Room Heater</h2>
-            <p>Longivity enhancement of your cooling and refrigeration systems</p>
+            <p>Services Offered</p>
             <ul class="list-unstyled py-3">
-              <li>?</li>
+              <li>Rates will be decided at the time of service</li>
             </ul>
-            <a href = "" class="main-btn mt-4">Checkout For More Services</a>
           </div>
         </div>
       </div>
@@ -464,14 +469,12 @@
         <div class="row align-items-center" id="inverter">
           <div class="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
             <h2 style="color: white;">Inverter</h2>
-            <h4 style="color: rgba(20, 19, 19, 0.726);">Capturing Memories</h4>
-            <p>Relive your precious moments captured by our Professionals</p>
+            <p>Services Offered</p>
             <ul class="list-unstyled py-3">
               <li>Installation : Rs-499</li>
               <li>Repair Charge : ?</li>
               <li>Wiring Fault Connection : ?</li>
             </ul>
-            <button class="main-btn mt-4">Checkout For More Services</button>
           </div>
           <div class="col-lg-7 col-md-12">
             <div class="card border-0">
@@ -491,11 +494,9 @@
           </div>
           <div class="col-lg-5 col-md-12 text-sec">
             <h2>Microwave</h2>
-            <p>Longivity enhancement of your cooling and refrigeration systems</p>
             <ul class="list-unstyled py-3">
               <li>Service : Rs-349</li>
             </ul>
-            <a href = "" class="main-btn mt-4">Checkout For More Services</a>
           </div>
         </div>
       </div>
@@ -584,7 +585,7 @@
         <div class="col-sm-12">
           <div class="footer-copy">
             <div class="copy-right text-center pt-5">
-              <p class="text-light">© 2021. PIZZA. All rights reserved.</p>
+              <p class="text-light">© 2022. HUYGENS. All rights reserved.</p>
             </div>
           </div>
         </div>
@@ -593,6 +594,7 @@
   </div>
 </footer>
 </section>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
   <!-- own js -->
