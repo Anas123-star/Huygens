@@ -22,7 +22,7 @@ navBar.forEach(function (a){
 
 
 const imageGrid = document.querySelector(".image-grid");
-const links = imageGrid.querySelectorAll("a");
+// const links = imageGrid.querySelectorAll("a");
 const imgs = imageGrid.querySelectorAll("img");
 const lightboxModal = document.getElementById("lightbox-modal");
 const bsModal = new bootstrap.Modal(lightboxModal);
