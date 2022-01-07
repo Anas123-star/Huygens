@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var DOMAIN = "http://localhost/Huygens/";
+	var DOMAIN = "http://huygens.in/Huygens/";
 	addNewRow();
 	addNewRow_other();
 	addNewRow_product();

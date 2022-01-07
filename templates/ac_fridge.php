@@ -17,7 +17,7 @@
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
 <div class="fixed-bottom"> 
-    <div class="call_now"><a class="main-btn" href="tel:713-992-0916" 
+    <div class="call_now"><a class="main-btn" href="tel:+91-8449775571"  
       style="border-radius:10%;padding: 10px; font-size: 14px; color:white; background-color:#002233;" >
       <i class="fa fa-phone-alt fa-20px"></i> Call Now</a>
     </div>
@@ -81,22 +81,13 @@
               <div class="carousel-item active">
                 
                   <img src="../images/central-air-conditioner.jpg" class="img-fluid">
-                  <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                    live the blind texts. "</p>
-                  <h5>Johnthan Doe - UX Designer</h5>
                
               </div>
               <div class="carousel-item">
                   <img src="../images/fridge.jpg" class="img-fluid" style="width: 500px; height:auto;">
-                  <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                    live the blind texts. "</p>
-                  <h5>Maccy Doe - Front End</h5>
               </div>
               <div class="carousel-item">
                   <img src="../images/split-ac.jpg" class="img-fluid">
-                  <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                    live the blind texts. "</p>
-                  <h5>Johnthan Doe - UX Designer</h5>
                 
               </div>
             </div>
@@ -266,12 +257,12 @@
       <div class="col-6 col-sm-2 mb-4 mb-lg-0">
         <div class = "card">
           <div class="cat-image">
-            <a class="link_category_product" href="">
+            <a class="link_category_product" href="#inver_fridge">
               <img src="../images/fridge.jpg" class="img-fluid">
             </a>
           </div>
           <div class="cat-title">
-            <a href="#">Inverter Refrigerator</a>
+            <a href="#inver_fridge">Inverter Refrigerator</a>
           </div>
         </div>
       </div>
@@ -279,24 +270,24 @@
       <div class="col-6 col-sm-2 mb-4 mb-lg-0">
         <div class = "card">
           <div class="cat-image">
-            <a class="link_category_product" href="">
+            <a class="link_category_product" href="#non_inver_fridge">
               <img src="../images/non_inverter_fridge.png" class="img-fluid">
             </a>
           </div>
           <div class="cat-title">
-            <a href="#">Non-Inverter Refrigerator</a>
+            <a href="#non_inver_fridge">Non-Inverter Refrigerator</a>
           </div>
         </div>
       </div>
       <div class="col-6 col-sm-2 mb-4 mb-lg-0">
         <div class = "card">
           <div class="cat-image">
-            <a class="link_category_product" href="">
+            <a class="link_category_product" href="#deep_freezer">
               <img src="../images/deep_freezer.jpg" class="img-fluid">
             </a>
           </div>
           <div class="cat-title">
-            <a href="#">Deep Freezer</a>
+            <a href="#deep_freezer">Deep Freezer</a>
           </div>
         </div>
       </div>
@@ -616,7 +607,7 @@
 
 <section id="service">
   <div class="service-section wrapper" >
-    <div class="container food-type" style="background-color: black;">
+    <div class="container food-type" style="background-color: black;" id = "inver_fridge">
       <div class="row align-items-center" id="washing_machine">
         <div class="col-lg-7 col-md-12 mb-lg-0 mb-5">
           <div class="card border-0">
@@ -638,7 +629,7 @@
       </div>
     </div>
     <p></p>
-    <div class="container food-type" style="background-color: white;">
+    <div class="container food-type" style="background-color: white;" id = "non_inver_fridge">
       <div class="row align-items-center" id="ro_filter">
         <div class="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
           <h2>Non-Inverter Refrigerator</h2>
@@ -656,7 +647,7 @@
         </div>
       </div>
     </div>
-    <div class="container food-type" style="background-color: black;">
+    <div class="container food-type" style="background-color: black;" id = "deep_freezer">
       <div class="row align-items-center" id="washing_machine">
         <div class="col-lg-7 col-md-12 mb-lg-0 mb-5">
           <div class="card border-0">
@@ -713,11 +704,11 @@
           <img src="../images/logo_small.jpg" class="img-fluid" style="width: 30%;">
           <p></p>
           <div class="footer-social pb-4 text-center">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=helpdesk@huygens.in" target="_blank"><i class="fa fa-envelope"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+             <a href="#"><i class="fab fa-linkedin"></i></a>
+             <a href="https://www.instagram.com/huygens.in/"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
         <div class="col-sm-12">

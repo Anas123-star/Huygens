@@ -20,7 +20,7 @@
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
 <div class="fixed-bottom"> 
-    <div class="call_now"><a class="main-btn" href="tel:713-992-0916" 
+    <div class="call_now"><a class="main-btn" href="tel:+91-8449775571"  
       style="border-radius:10%;padding: 10px; font-size: 14px; color:white; background-color:#002233;" >
       <i class="fa fa-phone-alt fa-20px"></i> Call Now</a>
     </div>
@@ -65,7 +65,7 @@
             <h1 style="font-size: 28px;">BEST<br> SERVICE<br><span style="color: black;">IN <br>YOUR <br>CITY</span></h1>
             <h2 style="color: rgb(148, 2, 2);">At your doorstep</h2>
             <div class="mt-4">
-              <a class="main-btn" href="tel:713-992-0916">Register Your Service <i class="fas fa-phone ps-3"></i></a>
+              <a class="main-btn" href="tel:+91-8449775571"  >Register Your Service <i class="fas fa-phone ps-3"></i></a>
             </div>
           </div>
         </div>
@@ -216,95 +216,25 @@
              Wall LED
             </li>
           </ul> 
-          <a class="main-btn" href="tel:713-992-0916">For more information <i class="fas fa-phone ps-3"></i></a>
+          <a class="main-btn" href="tel:+91-8449775571" >For more information <i class="fas fa-phone ps-3"></i></a>
         </div>
       </div>
     </div>
     <p></p>
-    <div class="container food-type" style="background-color: black;">
-      <div class="row align-items-center" id="wedding_photography">
-        <div class="col-lg-7 col-md-12 mb-lg-0 mb-5">
-          <div class="card border-0">
-            <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-              <div class="carousel-inner">
-              
-                <div class="carousel-item active">
-                  <img src="../images/IMG_9164.JPG" class="img-fluid" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="../images/IMG_9708.JPG" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="../images/IMG_2201.JPG" class="d-block w-100" alt="...">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5 col-md-12 text-sec">
-          <h2>Album</h2>
-          <p>Cost of stay and travel borne by client </p>
-            <p>Services Offered</p>
-            <ul class="list-unstyled py-3">
-            <li style="color: cadetblue;">
-              Canvera :
-              12X36 :
-              14X40 :
-            Photo Book :
-            12X18:
-            </li >
-            <li style="color: cadetblue;">
-              pAGES:
-              1) gLOSSY - (HD high Glossy,Slim Glossy)
-              2)NTR - (High Slim)
-              3)Mate -(Dual MAT Golden Touch SilveR)
-              4)Texture 
-              5)Velvet 
-              6)sILKY Mate
-            </li>
-            <li style="color: cadetblue;">
-              Traditional Photography : Rs-10000/day
-            </li>
-            <li style="color: cadetblue;">
-              Traditional Videography : Rs-15000/day
-            </li>
-            <li style="color: cadetblue;">
-              Extras : Drone- Rs 5000/day
-              Flower Drone : Rs 10000/day
-            </li>
-            <li style="color: cadetblue;">
-              1 Wall LED- Rs 15000
-            </li>
-          </ul>
-           
-          <button class="main-btn mt-4">Checkout For More Service</button>
-        </div>
-      </div>
-    </div>
-    <p></p>
+
     <div class="container food-type" style="background-color: white;">
       <div class="row align-items-center" id="ro_filter">
         <div class="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
           <h2>Pre Wedding</h2>
-          <h4 style="color: black;">Look Good, Feel Good</h4>
-          <p>Changing the paradigm of your styling over the wide range of bridal to haircut <br> Bringing your stylist at your doorstep</p>
+          <p>Pre-wedding shoots are for those who want good pictures of their loved ones without 
+            the complications of heavy wedding attire, makeup, ornaments, a slew of people, and annoying selfies. 
+            Pre-wedding photography allows both partners to become more familiar with one another. You have the option
+             of posing or not posing. Photographers for pre-wedding shoots are focused on capturing natural moments, expressions, 
+             and genuine emotions shared by the couple. These images add to the vibrancy of your album.</p>
           <ul class="list-unstyled py-3">
             <li>40000/day</li>
           </ul>
-          <a class="main-btn" href="tel:713-992-0916">For more information <i class="fas fa-phone ps-3"></i></a>
+          <a class="main-btn" href="tel:+91-8449775571">For more information <i class="fas fa-phone ps-3"></i></a>
         </div>
         <div class="col-lg-7 col-md-12">
           <div class="card border-0">
@@ -376,13 +306,11 @@
         </div>
         <div class="col-lg-5 col-md-12 text-sec">
           <h2>Post Wedding</h2>
-          <p>Longivity enhancement of your cooling and refrigeration systems</p>
-          <ul class="list-unstyled py-3">
-            <li>Pump Installation : Rs-199</li>
-            <li>Grass Change : Rs-499</li>
-            <li>Circuit Problem : Rs-69</li>
-          </ul>
-          <a class="main-btn" href="tel:713-992-0916">For more information <i class="fas fa-phone ps-3"></i></a>
+          <p>A post-wedding shoot is an important step in a couple's marriage. A post-wedding shoot captures your journey with your partner
+             and can be done whenever you want. A couple's love can always be kept alive if they have a happy memory to fall back on. When 
+             you take a walk down memory lane years from now, it will warm your heart and fill it with love. </p>
+        
+          <a class="main-btn" href="tel:+91-8449775571">For more information <i class="fas fa-phone ps-3"></i></a>
 
         </div>
       </div>
@@ -392,9 +320,11 @@
       <div class="row align-items-center" id="fan">
         <div class="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
           <h2 style="color: white;">Maternity Shoot</h2>
+          <p>A maternity shoot is a photo shoot or series of photo shoots done for a soon-to-be mother during her pregnancy or maternity period. 
+            Maternity sessions capture the beauty of your growing baby bump and celebrate the bond between mother and child.</p>
           <ul class="list-unstyled py-3">
           </ul>
-          <a class="main-btn" href="tel:713-992-0916">For more information <i class="fas fa-phone ps-3"></i></a>
+          <a class="main-btn" href="tel:+91-8449775571">For more information <i class="fas fa-phone ps-3"></i></a>
         </div>
         <div class="col-lg-7 col-md-12">
           <div class="card border-0">
@@ -490,7 +420,7 @@
           <ul class="list-unstyled py-3">
             <li>Service : Rs-199</li>
           </ul>
-          <a class="main-btn" href="tel:713-992-0916">For more information <i class="fas fa-phone ps-3"></i></a>
+          <a class="main-btn" href="tel:+91-8449775571" >For more information <i class="fas fa-phone ps-3"></i></a>
         </div>
         <div class="col-lg-7 col-md-12">
           <div class="card border-0">
@@ -529,7 +459,82 @@
           </div>
         </div>
       </div>
-    </div>   
+    </div> 
+    <p></p>
+    <div class="container food-type" style="background-color: black;">
+      <div class="row align-items-center" id="wedding_photography">
+        <div class="col-lg-7 col-md-12 mb-lg-0 mb-5">
+          <div class="card border-0">
+            <div id="carouselExampleIndicators6" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+              
+                <div class="carousel-item active">
+                  <img src="../images/album1.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../images/album2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../images/album3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-12 text-sec">
+          <h2>Album</h2>
+          <p>Cost of stay and travel borne by client </p>
+            <p>Services Offered</p>
+            <ul class="list-unstyled py-3">
+            <li style="color: cadetblue;">
+              Canvera :
+              12X36 :
+              14X40 :
+            Photo Book :
+            12X18:
+            </li >
+            <li style="color: cadetblue;">
+              pAGES:
+              1) gLOSSY - (HD high Glossy,Slim Glossy)
+              2)NTR - (High Slim)
+              3)Mate -(Dual MAT Golden Touch SilveR)
+              4)Texture 
+              5)Velvet 
+              6)sILKY Mate
+            </li>
+            <li style="color: cadetblue;">
+              Traditional Photography : Rs-10000/day
+            </li>
+            <li style="color: cadetblue;">
+              Traditional Videography : Rs-15000/day
+            </li>
+            <li style="color: cadetblue;">
+              Extras : Drone- Rs 5000/day
+              Flower Drone : Rs 10000/day
+            </li>
+            <li style="color: cadetblue;">
+              1 Wall LED- Rs 15000
+            </li>
+          </ul>
+           
+          <a class="main-btn mt-4" href="tel:+91-8449775571">For More Information</a>
+        </div>
+      </div>
+    </div>
+    <p></p>  
     </div>
 </section>
   <!-- Carousel wrapper -->
@@ -549,10 +554,10 @@
            <p></p>
            <div class="footer-social pb-4 text-center">
              <a href="#"><i class="fab fa-facebook-f"></i></a>
-             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=helpdesk@huygens.in" target="_blank"><i class="fa fa-envelope"></i></a>
              <a href="#"><i class="fab fa-youtube"></i></a>
              <a href="#"><i class="fab fa-linkedin"></i></a>
-             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="https://www.instagram.com/huygens.in/"><i class="fab fa-instagram"></i></a>
            </div>
          </div>
          <div class="col-sm-12">
