@@ -14,8 +14,8 @@
 
 
   <!-- OWN CSS -->
-  <link rel="stylesheet" href="css/style1.css">
-  <link rel="stylesheet" href="CSS/responsive.css">
+  <link rel="stylesheet" href="../CSS/style1.css">
+  <link rel="stylesheet" href="../CSS/responsive.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
@@ -37,7 +37,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+              <a class="main-btn active" aria-current="page" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#department"> Departments</a>
@@ -46,16 +46,10 @@
               <a class="nav-link" href="#photography_service">Services Offered</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.php">Login</a>
+              <a class="main-btn" href="../login.php">Login</a>
             </li> 
             <li class="nav-item">
               <a class="nav-link" href="#contact_us">Contact-Us</a>
-            </li> 
-            <li class="nav-item">
-              <a class="nav-link" href="#reviews">Reviews</a>
             </li> 
           </ul>
         </div>
@@ -70,7 +64,6 @@
           <div class="col-lg-5 col-md-6">
             <h1 style="font-size: 28px;">BEST<br> SERVICE<br><span style="color: black;">IN <br>YOUR <br>CITY</span></h1>
             <h2 style="color: rgb(148, 2, 2);">At your doorstep</h2>
-            <p>*With in one hour</p>
             <div class="mt-4">
               <a class="main-btn" href="tel:713-992-0916">Register Your Service <i class="fas fa-phone ps-3"></i></a>
             </div>
@@ -89,7 +82,7 @@
         <div class = "card">
           <div class="cat-image">
             <a class="link_category_product" href="electrical_services.php">
-              <img src="./images/elec_icon.jpg" class="img-fluid">
+              <img src="../images/elec_icon.jpg" class="img-fluid">
             </a>
           </div>
           <div class="cat-title">
@@ -101,7 +94,7 @@
         <div class = "card">
           <div class="cat-image">
             <a class="link_category_product" href="salon.php">
-              <img src="./images/salon_icon.jpg" class="img-fluid">
+              <img src="../images/salon_icon.jpg" class="img-fluid">
             </a>
           </div>
           <div class="cat-title">
@@ -113,7 +106,7 @@
         <div class = "card">
           <div class="cat-image">
             <a class="link_category_product" href="ac_fridge.php">
-              <img src="./images/ac_icon.jpg" class="img-fluid">
+              <img src="../images/ac_icon.jpg" class="img-fluid">
             </a>
           </div>
           <div class="cat-title">
@@ -125,7 +118,7 @@
         <div class = "card">
           <div class="cat-image">
             <a class="link_category_product" href="photo_video.php">
-              <img src="./images/camera_icon.jpg" class="img-fluid">
+              <img src="../images/camera_icon.jpg" class="img-fluid">
             </a>
           </div>
           <div class="cat-title">
@@ -138,7 +131,7 @@
           <div class="cat-image">
             <a class="link_category_product" href="">
               <video class="img-fluid" autoplay loop muted>
-                <source src="images/Sequence 01.mp4" type="video/mp4" />
+                <source src="../images/Sequence 01.mp4" type="video/mp4" />
               </video>
             </a>
           </div>
@@ -152,7 +145,7 @@
           <div class="cat-image">
             <a class="link_category_product" href="">
               <video class="img-fluid" autoplay loop muted>
-                <source src="images/Sequence 01.mp4" type="video/mp4" />
+                <source src="../images/Sequence 01.mp4" type="video/mp4" />
               </video>
             </a>
           </div>
@@ -179,13 +172,13 @@
               <div class="carousel-inner">
               
                 <div class="carousel-item active">
-                  <img src="images/IMG_9164.JPG" class="img-fluid" alt="...">
+                  <img src="../images/IMG_9164.JPG" class="img-fluid" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/IMG_9708.JPG" class="d-block w-100" alt="...">
+                  <img src="../images/IMG_9708.JPG" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/IMG_2201.JPG" class="d-block w-100" alt="...">
+                  <img src="../images/IMG_2201.JPG" class="d-block w-100" alt="...">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
@@ -241,13 +234,13 @@
               <div class="carousel-inner">
               
                 <div class="carousel-item active">
-                  <img src="images/IMG_9164.JPG" class="img-fluid" alt="...">
+                  <img src="../images/IMG_9164.JPG" class="img-fluid" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/IMG_9708.JPG" class="d-block w-100" alt="...">
+                  <img src="../images/IMG_9708.JPG" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/IMG_2201.JPG" class="d-block w-100" alt="...">
+                  <img src="../images/IMG_2201.JPG" class="d-block w-100" alt="...">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
@@ -324,13 +317,13 @@
               <div class="carousel-inner">
                 
                 <div class="carousel-item active">
-                  <img src="images/1641182213558.jpg" class="d-block w-100" alt="...">
+                  <img src="../images/1641182213558.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/IMG_9136_1.jpg" class="d-block w-100" alt="...">
+                  <img src="../images/IMG_9136_1.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/1641182213568.jpg" class="d-block w-100" alt="...">
+                  <img src="../images/1641182213568.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
@@ -361,13 +354,13 @@
               <div class="carousel-inner">
                 
                 <div class="carousel-item active">
-                  <img src="images/IMG_7350.JPG" class="d-block w-100" alt="...">
+                  <img src="../images/IMG_7350.JPG" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/IMG_2209.JPG" class="d-block w-100" alt="...">
+                  <img src="../images/IMG_2209.JPG" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/DSC02699.JPG" class="d-block w-100" alt="...">
+                  <img src="../images/DSC02699.JPG" class="d-block w-100" alt="...">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
@@ -414,13 +407,13 @@
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="images/maternity1.jpg" class="d-block w-100" alt="...">
+                  <img src="../images/maternity1.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/maternity2.jpg" class="d-block w-100" alt="...">
+                  <img src="../images/maternity2.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/maternity3.jpg" class="d-block w-100" alt="...">
+                  <img src="../images/maternity3.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide="prev">
@@ -451,17 +444,17 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <video class="img-fluid" autoplay loop muted>
-                    <source src="images/Anas Logo (white).mp4" type="video/mp4" />
+                    <source src="../images/Anas Logo (white).mp4" type="video/mp4" />
                   </video>
                 </div>
                 <div class="carousel-item">
-                  <img src="images/party make up air brush 4000.jpeg" class="d-block w-100" alt="...">
+                  <img src="../images/party make up air brush 4000.jpeg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/bridal make studio 10000.jpeg" class="d-block w-100" alt="...">
+                  <img src="../images/bridal make studio 10000.jpeg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/airbrush-bridal-makeup-14000.jpg" class="d-block w-100" alt="...">
+                  <img src="../images/airbrush-bridal-makeup-14000.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide="prev">
@@ -511,17 +504,17 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <video class="img-fluid" autoplay loop muted>
-                    <source src="images/Anas Logo (white).mp4" type="video/mp4" />
+                    <source src="../images/Anas Logo (white).mp4" type="video/mp4" />
                   </video>
                 </div>
                 <div class="carousel-item">
-                  <img src="images/party make up air brush 4000.jpeg" class="d-block w-100" alt="...">
+                  <img src="../images/party make up air brush 4000.jpeg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/bridal make studio 10000.jpeg" class="d-block w-100" alt="...">
+                  <img src="../images/bridal make studio 10000.jpeg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/airbrush-bridal-makeup-14000.jpg" class="d-block w-100" alt="...">
+                  <img src="../images/airbrush-bridal-makeup-14000.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide="prev">
@@ -544,170 +537,15 @@
  <!-- Modal -->
  
 <!-- Modal gallery -->
-<section id="portfolio">
-  <section class="image-grid" style="background-color: #002233;">
-  <div class="container-xxl" style="background-color: black;">
-  <h1 style="text-align: center;">Our Portfolio</h1>
-    <div class="row gy-4">
-      <div class="col-6 col-sm-2 mb-4 mb-lg-0">
-        <figure>
-          <a class="d-block" href="">
-            <img width="1920" height="1280" src="images/IMG_9136.JPG" class="img-fluid" >
-          </a>
-        </figure>
-      </div>
-      <div class="col-6 col-sm-2 mb-4 mb-lg-0">
-        <figure>
-          <a class="d-block" href="">
-            <img width="1920" height="1280" src="images/IMG_2197.JPG" class="img-fluid" >
-          </a>
-        </figure>
-      </div>
-      <div class="col-6 col-sm-2 mb-4 mb-lg-0">
-        <figure>
-          <a class="d-block" href="">
-            <img width="1920" height="1280" src="images/IMG_2201.JPG" class="img-fluid" >
-          </a>
-        </figure>
-      </div>
-      <div class="col-6 col-sm-2 mb-4 mb-lg-0">
-        <figure>
-          <a class="d-block" href="">
-            <img width="1920" height="1280" src="images/IMG_7359.JPG" class="img-fluid" >
-          </a>
-        </figure>
-      </div>
-      <div class="col-6 col-sm-2 mb-4 mb-lg-0">
-        <figure>
-          <a class="d-block" href="">
-            <img width="1920" height="1280" src="images/IMG_8734.JPG" class="img-fluid" >
-          </a>
-        </figure>
-      </div>
-      <div class="col-6 col-sm-2 mb-4 mb-lg-0">
-        <figure>
-          <a class="d-block" href="">
-            <img width="1920" height="1280" src="images/IMG_9133.JPG" class="img-fluid" >
-          </a>
-        </figure>
-      </div>
-      <div class="col-6 col-sm-2 mb-4 mb-lg-0">
-        <figure>
-          <a class="d-block" href="">
-            <img width="1920" height="1280" src="images/IMG_7350.JPG" class="img-fluid" >
-          </a>
-        </figure>
-      </div>
-      <div class="col-6 col-sm-2 mb-4 mb-lg-0">
-        <figure>
-          <a class="d-block" href="">
-            <img width="1920" height="1280" src="images/IMG_9164.JPG" class="img-fluid" >
-          </a>
-        </figure>
-      </div>
-      <div class="col-6 col-sm-2 mb-4 mb-lg-0">
-        <figure>
-          <a class="d-block" href="">
-            <img width="1920" height="1280" src="images/DSC02699.JPG" class="img-fluid" >
-          </a>
-        </figure>
-      </div>
-      <div class="col-6 col-sm-2 mb-4 mb-lg-0">
-        <figure>
-          <a class="d-block" href="">
-            <img width="1920" height="1280" src="images/IMG_9792.JPG" class="img-fluid" >
-          </a>
-        </figure>
-      </div>
-      <div class="col-6 col-sm-2 mb-4 mb-lg-0">
-        <figure>
-          <a class="d-block" href="">
-            <img width="1920" height="1280" src="images/IMG_9708.JPG" class="img-fluid" >
-          </a>
-        </figure>
-      </div>
-      <div class="col-6 col-sm-2 mb-4 mb-lg-0">
-        <figure>
-          <a class="d-block" href="">
-            <img width="1920" height="1280" src="images/IMG_9793.JPG" class="img-fluid"  >
-          </a>
-        </figure>
-      </div>
-       
-      <!-- more columns here -->
-    </div>
-  </div>
 
-  <div class="modal lightbox-modal" id="lightbox-modal" tabindex="-1">
-  <div class="modal-dialog modal-fullscreen">
-    <div class="modal-content">
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      <div class="modal-body">
-        <div class="container-fluid p-0">
-          <!-- JS content here -->
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  </section>
-</section>
-<section id="reviews">
-  <div class="wrapper review-section">
-    <div class="container text-center">
-      <div class="text-center pb-4">
-        <h2>Photo And Videography</h2>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 col-lg-10 offset-lg-1">
-          <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="carousel-caption">
-                  <img src="images/img28.jpeg">
-                  <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                    live the blind texts. "</p>
-                  <h5>Johnthan Doe - UX Designer</h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-caption">
-                  <img src="images/img25.jpeg">
-                  <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                    live the blind texts. "</p>
-                  <h5>Maccy Doe - Front End</h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-caption">
-                  <img src="images/airbrush-bridal-makeup-14000.jpg">
-                  <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                    live the blind texts. "</p>
-                  <h5>Johnthan Doe - UX Designer</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 <section id="contact_us">
   <footer id="footer">
    <div class="footer pt-5" style="background-color: #002233;">
      <div class="container">
        <div class="row">
          <div class="col-md-12 text-center">
-           <img src="images/logo_small.jpg" class="img-fluid" style="width: 30%;">
+           <img src="../images/logo_small.jpg" class="img-fluid" style="width: 30%;">
            <p></p>
            <div class="footer-social pb-4 text-center">
              <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -731,8 +569,8 @@
  </section>
 <!-- Carousel wrapper -->
  <!-- MDB -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
   <!-- own js -->
-  <script src="js/main1.js"></script>
+  <script src="../js/main1.js"></script>
 </body>

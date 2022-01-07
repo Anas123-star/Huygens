@@ -29,6 +29,10 @@
         line-height: 1.875rem;
         color:var(--black-color);
     }
+    .navigation-wrap .nav-link2{
+        line-height: 1.875rem;
+        color:var(--black-color);
+    }
 
     /* Banner Design */ 
     .top-banner{
