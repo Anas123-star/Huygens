@@ -57,6 +57,7 @@ class User
 
 public function userLogin($emp_id,$password1)
 {
+	try{
 	$pre_stmt = $this->con->prepare("SELECT emp_id, email,dep_id,name,usertype,password FROM emp_reg WHERE emp_id = ?");
 	$pre_stmt->bind_param("s",$emp_id);
 	$pre_stmt->execute() or die($this->con->error);
@@ -87,6 +88,9 @@ public function userLogin($emp_id,$password1)
 		else{
 			return "PASSWORD_NOT_MATCHED";
 		}
+	}
+	}catch(Exception $e){
+		return $e;
 	}
 }
 
