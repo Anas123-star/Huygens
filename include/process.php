@@ -17,8 +17,13 @@ if(isset($_POST['name'])){
 //For Login Processing
 if (isset($_POST["log_password"]) AND isset($_POST["log_id"])) {
 	
+	try{
 		$user = new User();
-	
+		$result = $user->userLogin($_POST["log_id"],$_POST["log_password"]);
+		echo $result;
+	}catch(Exception $e){
+		echo json_encode("ERROR:".$e);
+	}
 	
 }
 //To get department

@@ -8,7 +8,7 @@ class User
     function __construct()
     {
         
-        include_once("..\database\db.php");
+        include_once("../database/db.php");
         $db = new DATABASE();
         $this->con = $db->connect();
 
