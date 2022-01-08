@@ -13,6 +13,7 @@
             
         }
     }
+    echo "he";
     $db = new Database();
     $db->connect();
 ?>
