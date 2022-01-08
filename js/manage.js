@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var DOMAIN = "http://huygens.in/";
+	var DOMAIN = "http://huygens.in";
 	
 	fetch_department();
 	function fetch_department(){
