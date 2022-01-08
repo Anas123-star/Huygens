@@ -264,7 +264,7 @@ $(document).ready(function(){
 					}
 				},
 				error: function(resp){
-					console.log("ERROR:"+resp);
+					console.log("ERROR:"+JSON.stringify(resp));
 				}
 			})
 
