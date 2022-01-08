@@ -1,8 +1,20 @@
 <?php
-include_once("../database/constants.php");
+
+
+
+//trigger exception in a "try" block
+try {
+	include_once("../database/constants.php");
 include_once("DBOperation.php");
 include_once("emp_reg.php");
 include_once("manage.php");
+  }
+  
+  //catch exception
+  catch(Exception $e) {
+	echo 'Message: ' .$e->getMessage();
+	exit();
+  }
 //For emp_reg
 if(isset($_POST['name'])){
 
