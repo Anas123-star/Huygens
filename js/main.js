@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var DOMAIN = "http://huygens.in/public_html/";
+	var DOMAIN = "http://huygens.in/";
     $("#register_form").on("submit",function(){
 
         var status = false;
