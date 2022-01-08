@@ -206,6 +206,7 @@ $(document).ready(function(){
 
 	//For Login Part
 	$("#login_form").on("submit",function(){
+		console.log(DOMAIN);
 
 		var id = $("#log_id");
 		var pass = $("#log_password");
@@ -231,7 +232,6 @@ $(document).ready(function(){
 		if (status) {
 			
 			$(".overlay").show();
-			console.log(DOMAIN);
 			$.ajax({
 				url : DOMAIN+"/include/process.php",
 				method : "POST",

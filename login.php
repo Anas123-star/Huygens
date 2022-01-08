@@ -14,7 +14,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-      // hello 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>inventory management system </title>
