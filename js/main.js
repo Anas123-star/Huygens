@@ -262,6 +262,9 @@ $(document).ready(function(){
 						$(".overlay").hide();
 						
 					}
+				},
+				error: function(resp){
+					console.log("ERROR:"+resp);
 				}
 			})
 
