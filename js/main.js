@@ -233,7 +233,7 @@ $(document).ready(function(){
 			
 			$(".overlay").show();
 			$.ajax({
-				url : DOMAIN+"/include/process.php",
+				url : "../include/process.php",
 				method : "POST",
 				data : $("#login_form").serialize(),
 				success : function(data){
