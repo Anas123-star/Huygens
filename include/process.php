@@ -531,8 +531,8 @@ if (isset($_POST["manageInvoiceAdmin"])) {
 }
 }  
 //catch exception
-catch(Exception $e) {
-  echo 'Message: ' .$e->getMessage();
+catch() {
+  echo "ERROR"
   exit();
 }
 ?>
