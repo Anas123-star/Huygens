@@ -1,8 +1,5 @@
 <?php
   include_once("./database/constants.php");
-  include_once("./database/db.php");
-
-  
   if (isset($_SESSION["email"])) {
     if($_SESSION["usertype"] == "admin"){
 	      header("location:".DOMAIN."/dashboard_admin.php");
