@@ -4,5 +4,5 @@
     define("USER","root");
     define("PASS","");
     define("DB","huygens");
-    define("DOMAIN","http://huygens.in/Huygens/");
+    define("DOMAIN","http://huygens.in/public_html/");
 ?>
