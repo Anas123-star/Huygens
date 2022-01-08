@@ -1,10 +1,9 @@
 <?php
-
 	include_once("../database/constants.php");
 include_once("DBOperation.php");
 include_once("emp_reg.php");
 include_once("manage.php");
-
+ 
 //For emp_reg
 if(isset($_POST['name'])){	
     $user = new User();
@@ -16,8 +15,16 @@ if(isset($_POST['name'])){
 }
 
 //For Login Processing
-if (isset($_POST["log_password"])AND isset($_POST["log_id"])) {
-	echo "hello";
+if (isset($_POST["log_password"]) AND isset($_POST["log_id"])) {
+	
+	try{
+		$user = new User();
+		$result = $user->userLogin($_POST["log_id"],$_POST["log_password"]);
+		echo $result;
+	}catch(Exception $e){
+		echo json_encode("ERROR:".$e);
+	}
+	
 }
 //To get department
 if (isset($_POST["getdepartment"])) {
