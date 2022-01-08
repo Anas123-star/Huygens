@@ -1,7 +1,8 @@
 <?php
 
 
-
+echo "ss";
+exit();
 //trigger exception in a "try" block
 try {
 	include_once("../database/constants.php");
@@ -16,17 +17,11 @@ include_once("manage.php");
 	exit();
   }
 //For emp_reg
-if(isset($_POST['name'])){
-
-	try{
-
-	
+if(isset($_POST['name'])){	
     $user = new User();
     $result = $user->createUserAccount($_POST['password1'],$_POST['usertype'],$_POST['select_dep'],$_POST['name'],$_POST['fathername'],$_POST['mothername'],$_POST['gender'],
     $_POST['dob'],$_POST['phone'],$_POST['email'],$_POST['address'],$_POST['city'],$_POST['state'],$_POST['pincode'],$_POST['adhaar_no'],$_POST['work_exp']);
-	}catch(Exception $e){
-		echo "ERROR".$e;
-	}
+	
    
     echo ($result);
 }
