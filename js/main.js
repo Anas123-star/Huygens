@@ -231,6 +231,7 @@ $(document).ready(function(){
 		if (status) {
 			
 			$(".overlay").show();
+			console.log(DOMAIN);
 			$.ajax({
 				url : DOMAIN+"/include/process.php",
 				method : "POST",
@@ -263,6 +264,7 @@ $(document).ready(function(){
 					}
 				}
 			})
+
 		}
 	})
 
