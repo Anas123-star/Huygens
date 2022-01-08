@@ -237,6 +237,7 @@ $(document).ready(function(){
 				method : "POST",
 				data : $("#login_form").serialize(),
 				success : function(data){
+					console.log(data);
 					if($.trim(data) == "NOT_REGISTERD"){
 						$(".overlay").hide();
 						id.addClass("border-danger");
