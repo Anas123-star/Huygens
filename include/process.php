@@ -27,11 +27,15 @@ if(isset($_POST['name'])){
 
 //For Login Processing
 if (isset($_POST["log_password"])AND isset($_POST["log_id"])) {
-	exit();
-	echo json_encode("HELLO");
-//	$user = new User();
-//	$result = $user->userLogin($_POST["log_id"],$_POST["log_password"]);
-//	echo $result;
+	
+	try{
+		$user = new User();
+		$result = $user->userLogin($_POST["log_id"],$_POST["log_password"]);
+		echo $result;
+	}catch(Exception $e){
+		echo json_encode("ERROR:".$e);
+	}
+	
 }
 //To get department
 if (isset($_POST["getdepartment"])) {
