@@ -252,18 +252,6 @@
         <div class="col-6 col-sm-2 mb-4 mb-lg-0">
           <div class = "card">
             <div class="cat-image">
-              <a class="link_category_product" href="#room_heater">
-                <img src="../images/roomheater.jpeg" class="img-fluid">
-              </a>
-            </div>
-            <div class="cat-title">
-              <a href="#room_heater">Room Heater</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-sm-2 mb-4 mb-lg-0">
-          <div class = "card">
-            <div class="cat-image">
               <a class="link_category_product" href="#inverter">
                 <img src="../images/inverter.jpeg" class="img-fluid">
               </a>
@@ -378,8 +366,6 @@
             <ul class="list-unstyled py-3">
               <li>Installation : Rs-99</li>
               <li>Winding Change : Rs-399</li>
-              <li>Portfolio Creation</li>
-              <li>Product Photography</li>
             </ul>
             
           </div>
@@ -434,54 +420,38 @@
         <div class="row align-items-center" id="room_heater">
           <div class="col-lg-7 col-md-12 mb-lg-0 mb-5">
             <div class="card border-0">
-              <img src="../images/roomheater.jpeg" class="img-fluid">
+              <img src="../images/inverter.jpeg" class="img-fluid">
             </div>
           </div>
           <div class="col-lg-5 col-md-12 text-sec">
-            <h2>Room Heater</h2>
+            <h2>Inverter</h2>
             <p>Services Offered</p>
             <ul class="list-unstyled py-3">
-              <li>Rates will be decided at the time of service</li>
+              <li>Installation : Rs-499</li>
+              <li>Repair Charge : As Per Condition</li>
+              <li>Wiring Fault Connection : As Per Condition </li>
             </ul>
           </div>
         </div>
       </div>
       <p></p>
-      <div class="container food-type" style="background-color: rgb(11, 2, 43);">
+      <div class="container food-type" style="background-color: #b91c00de;">
         <div class="row align-items-center" id="inverter">
           <div class="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
             <h2 style="color: white;">Inverter</h2>
             <p>Services Offered</p>
             <ul class="list-unstyled py-3">
-              <li>Installation : Rs-499</li>
-              <li>Repair Charge : ?</li>
-              <li>Wiring Fault Connection : ?</li>
+              <li>Service : Rs-349</li>
             </ul>
           </div>
           <div class="col-lg-7 col-md-12">
             <div class="card border-0">
-              <img src="../images/inverter.jpeg" class="img-fluid">
+              <img src="../images/microwave.jpeg" class="img-fluid">
             </div>
           </div>
         </div>
       </div>  
          
-      <p></p>
-      <div class="container food-type" style="background-color: #b91c00de;">
-        <div class="row align-items-center" id="microwave">
-          <div class="col-lg-7 col-md-12 mb-lg-0 mb-5">
-            <div class="card border-0">
-              <img src="../images/microwave.jpeg" class="img-fluid">
-            </div>
-          </div>
-          <div class="col-lg-5 col-md-12 text-sec">
-            <h2>Microwave</h2>
-            <ul class="list-unstyled py-3">
-              <li>Service : Rs-349</li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
   <p></p>
@@ -506,11 +476,12 @@
           <img src="../images/logo_small.jpg" class="img-fluid" style="width: 30%;">
           <p></p>
           <div class="footer-social pb-4 text-center">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/huygens.in/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/huygens.in/"><i class="fab fa-facebook-f"></i></a>
              <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=helpdesk@huygens.in" target="_blank"><i class="fa fa-envelope"></i></a>
-             <a href="#"><i class="fab fa-youtube"></i></a>
-             <a href="#"><i class="fab fa-linkedin"></i></a>
-             <a href="https://www.instagram.com/huygens.in/"><i class="fab fa-instagram"></i></a>
+             <a href="https://www.youtube.com/watch?v=HELMtrwGj00"><i class="fab fa-youtube"></i></a>
+             <a href="https://twitter.com/Huygens58704112"><i class="fab fa-twitter"></i></a>
+             <a href="https://www.linkedin.com/company/huygensindia"><i class="fab fa-linkedin"></i></a>
           </div>
         </div>
         <div class="col-sm-12">
