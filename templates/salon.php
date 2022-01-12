@@ -721,11 +721,12 @@
           <img src="../images/logo_small.jpg" class="img-fluid" style="width: 30%;">
           <p></p>
           <div class="footer-social pb-4 text-center">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/huygens.in/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/huygens.in/"><i class="fab fa-facebook-f"></i></a>
              <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=helpdesk@huygens.in" target="_blank"><i class="fa fa-envelope"></i></a>
-             <a href="#"><i class="fab fa-youtube"></i></a>
-             <a href="#"><i class="fab fa-linkedin"></i></a>
-             <a href="https://www.instagram.com/huygens.in/"><i class="fab fa-instagram"></i></a>
+             <a href="https://www.youtube.com/watch?v=HELMtrwGj00"><i class="fab fa-youtube"></i></a>
+             <a href="https://twitter.com/Huygens58704112"><i class="fab fa-twitter"></i></a>
+             <a href="https://www.linkedin.com/company/huygensindia"><i class="fab fa-linkedin"></i></a>
           </div>
         </div>
         <div class="col-sm-12">
